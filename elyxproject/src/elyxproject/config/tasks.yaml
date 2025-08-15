@@ -1,0 +1,31 @@
+planning_task:
+  description: |
+    Generate a complete 32-week narrative plan for a member's journey with Elyx.
+
+    **Core Objective:** Your output will be a single JSON object based on the `StoryPlan` Pydantic model. The plan must cover 8 months (32 weeks).
+
+    **Member Persona (Rohan Patel):**
+    - Age 46, Male, Regional Head of Sales (FinTech).
+    - Primary Residence: Singapore. Frequent travel to UK, US, South Korea, Jakarta.
+    - Goals: Reduce heart disease risk (family history), enhance cognitive function, early disease detection.
+    - Personality: Analytical, driven, values efficiency and evidence-based approaches. Time-constrained.
+    - Health: Generally healthy but managing one chronic condition. For this plan, you MUST select **Hypertension** as his chronic condition to manage.
+    - Communication: Prefers executive summaries but wants access to data. PA (Sarah Tan) handles scheduling.
+
+    **Constraints to Enforce:**
+    1.  **Diagnostics:** A full diagnostic test panel MUST be scheduled every three months (i.e., around the end of Week 12 and Week 24).
+    2.  **Travel:** The member MUST travel for at least 1 week out of every 4 weeks.
+    3.  **Exercise:** Exercise plans MUST be updated every 2 weeks.
+    4.  **Non-Adherence (Friction):** The member sticks to the plan properly only ~50% of the time. You MUST create 'FrictionPoint' events where Rohan is non-compliant, leading to plan changes or de-escalation by the Elyx team.
+    5.  **Member-Initiated Conversations:** Plan for Rohan to initiate conversations up to 5 times per week on average, driven by curiosity or data he sees.
+    6.  **Team Roles:** The narrative must respect the specific roles of the Elyx team (Ruby for logistics, Dr. Warren for medical strategy, Advik for data, Carla for nutrition, Rachel for PT, Neel for escalations/QBRs).
+    7.  **QBRs:** Schedule Quarterly Business Reviews (QBRs) led by Neel at the end of Month 3 and Month 6.
+
+    Create a plan that is not just a schedule, but a story. Include arcs of progress, setbacks (due to friction), and breakthroughs. Ensure the `data_generation_prompts` are specific enough to guide the next phase of AI generation.
+  expected_output: |
+    A JSON object that strictly follows the `StoryPlan` Pydantic model, containing a list of 32 weekly plans.
+    The plan must include:
+    - Weekly breakdown of activities, diagnostics, and travel.
+    - Friction points and how they affect the narrative.
+    - Member-initiated conversations and their context.
+    - Clear roles for each Elyx team member in the narrative.
