@@ -10,8 +10,8 @@ def main():
     while True:
         print("\n--- Elyx Project ---")
         print("1. Run Phase 1: Generate Narrative Plan")
-        print("2. Run Phase 2: Generate Conversation")
-        print("3. Run Phase 3: Critique and Refine Conversation")
+        print("2. Run Phase 2: Generate 8-Month Conversation")
+        print("3. Run Phase 3: Create Episodic Journey Report") 
         print("4. Exit")
         choice = input("Enter your choice (1, 2, 3, or 4): ")
 
@@ -22,9 +22,8 @@ def main():
             print("\n--- Running Phase 2: Conversation Generation ---")
             run_phase2()
             
-        ## PHASE 3 NEEDS IMPROVEMENT
         elif choice == '3':
-            print("\n--- Running Phase 3: Automated Refinement ---")
+            print("\n--- Running Phase 3: Generating Episodic Report ---")
             run_phase3()
         elif choice == '4':
             print("Exiting...")

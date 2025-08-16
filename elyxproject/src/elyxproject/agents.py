@@ -77,8 +77,8 @@ class NarrativeAgents():
     def elyx_analyst_agent(self):
         return Agent(config=agents_config['elyx_analyst_agent'], llm=llm_pro, verbose=True)
     
-    def conversation_critic_agent(self):
-        return Agent(config=agents_config['conversation_critic_agent'], llm=llm_pro, verbose=True)
+    def journey_summarizer_agent(self):
+        return Agent(config=agents_config['journey_summarizer_agent'], llm=llm_pro, verbose=True)
     
-    def conversation_refiner_agent(self):
-        return Agent(config=agents_config['conversation_refiner_agent'], llm=llm_pro, verbose=True)
+    def elyx_data_analyst_agent(self):
+        return Agent(config=agents_config['elyx_data_analyst_agent'], llm=llm_pro, verbose=True)
