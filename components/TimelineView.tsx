@@ -321,7 +321,10 @@
 "use client";
 
 import { useState } from "react";
+// @ts-ignore
 import { Chrono } from "react-chrono";
+
+// import { Chrono } from "react-chrono";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import journeyData from "@/data/journey.json";
