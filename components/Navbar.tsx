@@ -14,6 +14,10 @@ export default function Navbar() {
       <Link href="/dashboard" className="font-semibold hover:underline">
         Dashboard
       </Link>
+      <Link href="/fullstory" className="font-semibold hover:underline">
+        Full Story
+      </Link>
+
     </nav>
   );
 }
