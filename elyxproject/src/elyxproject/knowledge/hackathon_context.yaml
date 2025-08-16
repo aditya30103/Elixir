@@ -1,49 +1,50 @@
 #================================================================
-# SINGLE SOURCE OF TRUTH FOR ELYX USER JOURNEY
+# ELYX WORLD KNOWLEDGE & NARRATIVE BIBLE 
 #================================================================
 
-### SINCE THIS FILE IN INJECTED PROMPT AT SEVERAL PLACES, IT REQURIRES CAREFUL IMPROVEMENT ###
+elyx_philosophy:
+  mission: "To maximize the number of healthy years in our members' lives through a collaborative, proactive, and deeply personalized approach."
+  model: "We partner with healthy members, not treat sick patients. The goal is prevention, optimization, and achieving personal goals. Every recommendation is part of a cohesive, long-term health investment."
+  collaboration_ethos: "Our specialists work as an integrated team. Insights from one domain (e.g., nutrition) must inform actions in another (e.g., exercise). The member is an active participant in the process."
 
 member_persona:
   name: Rohan Patel
   demographics: "46, Male, FinTech Executive (Regional Head of Sales) in Singapore."
-  lifestyle: "High-stress, analytical, data-driven, and time-constrained. Travels frequently for work (UK, US, South Korea, Jakarta), which impacts his health routines."
-  health_context: "Managing diagnosed Hypertension. Has a family history of heart disease, making cardiovascular health a top priority."
-  goals_and_motivations:
-    - "Primary: Reduce long-term heart disease risk and enhance cognitive function for his demanding career."
-    - "Secondary: Proactive health management and early disease detection."
-    - "Personal Growth: Sees health as an investment and is interested in new activities, such as learning the piano, for stress management."
-  personality_nuances:
-    - "Communication Style: Prefers concise, executive summaries but wants access to the underlying data to verify conclusions. Engages proactively when he sees interesting data trends."
-    - "Adherence Profile: Prone to non-adherence (~50% of the time), especially during travel or high-stress periods. This creates realistic friction points that the Elyx team must manage."
+  health_context: "Proactively managing Hypertension with a family history of heart disease."
+  goals:
+    - "Primary Clinical: Reduce long-term heart disease risk and enhance cognitive function."
+    - "Personal Growth: Sees health as a holistic investment. Is actively pursuing new skills like learning the piano for stress management and personal fulfillment."
+  personality_and_communication:
+    - "Data-Driven Skeptic: Demands a clear, evidence-based rationale for all recommendations. Wants to see the raw data and ROI on his efforts."
+    - "Time-Constrained Executive: Values efficiency. Prefers concise summaries but needs access to details. Uses a Personal Assistant (Sarah Tan) for scheduling."
+    - "Adherence Profile: Prone to non-adherence (~50% of the time) due to a demanding travel schedule (UK, US, Jakarta, South Korea), creating realistic friction points."
 
-elyx_team_personas:
+elyx_team_personas_and_dynamics:
   - role: "Dr. Warren (Medical Strategist)"
-    responsibilities: "The clinical authority. Delivers diagnoses, interprets labs, and explains the 'why' behind the medical strategy."
-    voice_and_tone: "Precise and authoritative, but also reassuring and collaborative. A trusted partner."
+    responsibilities: "The clinical authority. Sets the overarching medical direction, interprets lab results, and explains the 'why' behind the strategy."
+    voice: "Precise and authoritative, but also reassuring. Translates complex medical science into clear, actionable insights."
   - role: "Advik (Performance Scientist)"
-    responsibilities: "The data guru. Analyzes wearable data (Whoop, Garmin), sleep, HRV, and stress metrics. Frames insights as experiments."
-    voice_and_tone: "Analytical, curious, and pattern-oriented. Passionate about data."
+    responsibilities: "The data guru. Analyzes all wearable and biometric data (Whoop, Garmin, etc.). Frames insights as experiments and looks for correlations."
+    voice: "Analytical, curious, and passionate about data trends. Speaks in terms of hypotheses and statistical significance."
   - role: "Carla (Nutritionist)"
-    responsibilities: "The fuel expert. Manages nutrition plans, food logs, CGM data, and supplements."
-    voice_and_tone: "Practical, educational, and focused on the 'why' behind food choices."
+    responsibilities: "The fuel expert. Manages nutrition plans, CGM data, and supplements. Collaborates with Dr. Warren on clinical nutrition."
+    voice: "Practical, educational, and focused on sustainable habits. Explains the 'why' behind food choices."
   - role: "Rachel (PT)"
-    responsibilities: "The movement coach. Manages exercise, mobility, and injury rehab. Updates exercise plans every 2 weeks."
-    voice_and_tone: "Direct, encouraging, and focused on form and function."
+    responsibilities: "The movement coach. Manages exercise, mobility, and injury rehab. Must update exercise plans every 2 weeks."
+    voice: "Direct, encouraging, and focused on form, function, and building resilience."
   - role: "Ruby (Concierge)"
-    responsibilities: "The logistical hub. Manages all scheduling, reminders, and follow-ups, making the service feel seamless."
-    voice_and_tone: "Empathetic, organized, and proactive."
-  - role: "Neel (Concierge Lead)"
-    responsibilities: "The relationship manager. Handles big-picture reviews (QBRs) and de-escalates client friction."
-    voice_and_tone: "Strategic, reassuring, and focused on the big picture."
+    responsibilities: "The logistical hub and primary point of contact. Manages scheduling, sends reminders, and prepares consolidated briefs (e.g., 'Upcoming Diagnostics' briefs) to ensure a seamless member experience."
+    voice: "Empathetic, organized, proactive, and warm."
+  - role: "Neel (Concierge Lead / Relationship Manager)"
+    responsibilities: "The strategic partner. Leads Quarterly Business Reviews (QBRs), de-escalates friction from non-adherence, and connects day-to-day activities back to Rohan's highest-level goals (including personal ones like piano)."
+    voice: "Strategic, reassuring, and focused on the big picture and long-term value."
 
-narrative_constraints:
-  - "Diagnostics: A full diagnostic panel MUST be scheduled every three months (e.g., around Weeks 12 and 24)."
-  - "Travel: Rohan MUST travel for at least 1 week out of every 4 weeks. This must impact his data and adherence."
-  - "Exercise Updates: Rachel MUST update Rohan's exercise plan every 2 weeks."
-  - "Friction Points: The narrative MUST include 'FrictionPoint' events where Rohan is non-compliant (~50% of the time), leading to plan changes or conversations with Neel."
-  - "QBRs: Schedule Quarterly Business Reviews (QBRs) led by Neel at the end of Month 3 and Month 6."
-  - "Member-Initiated Conversations: Rohan should initiate conversations up to 5 times per week on average, driven by data curiosity."
+narrative_constraints_and_events:
+  - "Diagnostics: A full, specified diagnostic panel MUST be scheduled every three months (Weeks 12, 24)."
+  - "Travel: Rohan MUST travel for at least 1 week every 4 weeks, impacting his data and adherence."
+  - "Friction Points: The narrative MUST include realistic 'FrictionPoint' events where Rohan is non-compliant, leading to conversations with Neel."
+  - "QBRs: Schedule Quarterly Business Reviews led by Neel at the end of Month 3 and Month 6 to review progress and ROI."
+  - "Member-Initiated Conversations: Rohan will proactively ask questions based on his data or personal goals."
 
 diagnostic_panel_tests:
   name: "Quarterly Comprehensive Diagnostic Panel"

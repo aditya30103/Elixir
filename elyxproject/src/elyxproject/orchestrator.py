@@ -52,6 +52,9 @@ class Orchestrator:
             weekly_context = json.dumps(week_plan, indent=2)
             short_term_memory_log = []
             
+            # --- NEW: Check for Diagnostic Event ---
+            is_diagnostic_week = any(event.get('event_type') == 'Diagnostic' for event in week_plan.get('events', []))
+            
             max_turns = 10
             for i in range(max_turns):
                 history_snippet = "\n".join([f"{msg['timestamp']} {msg['speaker']}: {msg['message']}" for msg in short_term_memory_log[-5:]])
@@ -66,8 +69,18 @@ class Orchestrator:
                 delay_minutes = random.randint(5, 55)
                 current_sim_time += timedelta(minutes=delay_minutes)
                 
+                # --- Dynamic Prompt Augmentation for Diagnostic Tests ---
+                diagnostic_instruction = ""
+                if is_diagnostic_week and speaker_role in ["Dr. Warren", "Advik"]:
+                    diagnostic_instruction = """
+                    **--- CRITICAL DATA LOGGING TASK ---**
+                    This week involves a diagnostic panel. In your response, you MUST generate a `DataLog` object. The `details` section of this JSON MUST include plausible results for all the tests listed in the `diagnostic_panel_tests` section of the Core Context. This is not optional.
+                    """
+                
                 agent_task_prompt = f"""
                     You are {speaker_role}. Your task is to generate the next part of a conversation.
+                    
+                    {diagnostic_instruction}
 
                     **--- OUTPUT FORMAT INSTRUCTIONS ---**
                     - **BREVITY IS KEY:** Your chat message MUST be concise and to the point, like a real WhatsApp message. Aim for 1-3 short sentences. AVOID long paragraphs.
