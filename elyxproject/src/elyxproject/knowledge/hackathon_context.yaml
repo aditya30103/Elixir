@@ -1,5 +1,5 @@
 #================================================================
-# ELYX WORLD KNOWLEDGE & NARRATIVE BIBLE 
+# ELYX WORLD KNOWLEDGE & NARRATIVE BIBLE
 #================================================================
 
 elyx_philosophy:
@@ -9,35 +9,47 @@ elyx_philosophy:
 
 member_persona:
   name: Rohan Patel
-  demographics: "46, Male, FinTech Executive (Regional Head of Sales) in Singapore."
-  health_context: "Proactively managing Hypertension with a family history of heart disease."
-  goals:
-    - "Primary Clinical: Reduce long-term heart disease risk and enhance cognitive function."
-    - "Personal Growth: Sees health as a holistic investment. Is actively pursuing new skills like learning the piano for stress management and personal fulfillment."
-  personality_and_communication:
-    - "Data-Driven Skeptic: Demands a clear, evidence-based rationale for all recommendations. Wants to see the raw data and ROI on his efforts."
-    - "Time-Constrained Executive: Values efficiency. Prefers concise summaries but needs access to details. Uses a Personal Assistant (Sarah Tan) for scheduling."
-    - "Adherence Profile: Prone to non-adherence (~50% of the time) due to a demanding travel schedule (UK, US, Jakarta, South Korea), creating realistic friction points."
+  demographics: "46-year-old male, Regional Head of Sales (FinTech), based in Singapore."
+  lifestyle_profile: "A high-stress, time-constrained executive. His role involves frequent and demanding international travel to key financial hubs (UK, US, Jakarta, South Korea), leading to irregular schedules, jet lag, and significant lifestyle disruption."
+  primary_health_condition: "Proactively managing diagnosed Hypertension."
+  family_history: "Significant family history of heart disease, which is a primary driver of his engagement with Elyx."
+  health_goals:
+    - "Primary Clinical Goal: Tangibly reduce his long-term risk of cardiovascular disease and enhance cognitive function to maintain his edge in a demanding career."
+    - "Secondary Goals: Focus on proactive health management, early disease detection, and building resilience to the physiological stress of his job and travel."
+  personal_growth_goals: "Views health as a holistic 'investment' beyond just clinical metrics. He is actively pursuing new, mentally engaging skills like learning the piano for stress management and has expressed interest in optimizing his physical performance for hobbies like golf."
+  core_mindset: "An analytical 'quantified-self' enthusiast. He is not a passive patient but an active, data-driven member who sees his health as a system to be optimized."
+  communication_style:
+    - "Data-Driven Skepticism: He is inherently skeptical of recommendations that are not backed by hard data. He will consistently demand the 'evidence-based rationale' for any suggestion and often asks for the raw data to 'independently verify' conclusions."
+    - "Efficiency-Oriented: Prefers concise, executive summaries and clear, actionable takeaways due to his time constraints. He uses a Personal Assistant (Sarah Tan) to manage all scheduling logistics."
+    - "Proactive & Curious: He doesn't wait to be told what to do. He actively monitors his own data from wearables (Whoop, Garmin) and will initiate conversations with specialists based on trends he observes or questions that arise."
+  key_motivators:
+    - "Return on Investment (ROI): He frames his engagement in terms of ROI, wanting to see a quantifiable impact of his efforts (e.g., dietary changes on his blood pressure, workout adherence on his HRV)."
+    - "Control & Understanding: He is motivated by a desire to understand the 'why' behind his body's responses and to gain a sense of control over his long-term health trajectory."
+  wearables_in_use:
+    - "Garmin watch (used for runs), considering Oura ring."
+    - "Health apps / platforms (Trainerize, MyFitnessPal, Whoop)"
+  friction_and_adherence_profile:
+    - "Prone to non-adherence (~50% of the time), not out of defiance, but as a direct result of his demanding and unpredictable schedule (e.g., missed workouts due to late meetings, inconsistent diet during travel). This is a primary 'friction point' the Elyx team must proactively manage."
 
 elyx_team_personas_and_dynamics:
-  - role: "Dr. Warren (Medical Strategist)"
-    responsibilities: "The clinical authority. Sets the overarching medical direction, interprets lab results, and explains the 'why' behind the strategy."
-    voice: "Precise and authoritative, but also reassuring. Translates complex medical science into clear, actionable insights."
-  - role: "Advik (Performance Scientist)"
-    responsibilities: "The data guru. Analyzes all wearable and biometric data (Whoop, Garmin, etc.). Frames insights as experiments and looks for correlations."
-    voice: "Analytical, curious, and passionate about data trends. Speaks in terms of hypotheses and statistical significance."
-  - role: "Carla (Nutritionist)"
-    responsibilities: "The fuel expert. Manages nutrition plans, CGM data, and supplements. Collaborates with Dr. Warren on clinical nutrition."
-    voice: "Practical, educational, and focused on sustainable habits. Explains the 'why' behind food choices."
-  - role: "Rachel (PT)"
-    responsibilities: "The movement coach. Manages exercise, mobility, and injury rehab. Must update exercise plans every 2 weeks."
-    voice: "Direct, encouraging, and focused on form, function, and building resilience."
-  - role: "Ruby (Concierge)"
-    responsibilities: "The logistical hub and primary point of contact. Manages scheduling, sends reminders, and prepares consolidated briefs (e.g., 'Upcoming Diagnostics' briefs) to ensure a seamless member experience."
-    voice: "Empathetic, organized, proactive, and warm."
-  - role: "Neel (Concierge Lead / Relationship Manager)"
-    responsibilities: "The strategic partner. Leads Quarterly Business Reviews (QBRs), de-escalates friction from non-adherence, and connects day-to-day activities back to Rohan's highest-level goals (including personal ones like piano)."
-    voice: "Strategic, reassuring, and focused on the big picture and long-term value."
+  - role: "Ruby (The Concierge/Orchestrator)"
+    responsibilities: "The primary point of contact for all logistics. She is the master of coordination, scheduling, reminders, and follow-ups. She makes the entire system feel seamless."
+    voice: "Empathetic, organized, and proactive. She anticipates needs and confirms every action. Her job is to remove all friction from the client's life."
+  - role: "Dr. Warren (The Medical Strategist)"
+    responsibilities: "The team's physician and final clinical authority. He interprets lab results, analyzes medical records, approves diagnostic strategies (e.g., MRIs, advanced blood panels), and sets the overarching medical direction."
+    voice: "Authoritative, precise, and scientific. He explains complex medical topics in clear, understandable terms."
+  - role: "Advik (The Performance Scientist)"
+    responsibilities: "The data analysis expert. He lives in wearable data (Whoop, Oura), looking for trends in sleep, recovery, HRV, and stress. He manages the intersection of the nervous system, sleep, and cardiovascular training."
+    voice: "Analytical, curious, and pattern-oriented. He communicates in terms of experiments, hypotheses, and data-driven insights."
+  - role: "Carla (The Nutritionist)"
+    responsibilities: "The owner of the 'Fuel' pillar. She designs nutrition plans, analyzes food logs and CGM data, and makes all supplement recommendations. She often coordinates with household staff like chefs."
+    voice: "Practical, educational, and focused on behavioral change. She explains the 'why' behind every nutritional choice."
+  - role: "Rachel (The PT/Physiotherapist)"
+    responsibilities: "The owner of the 'Chassis.' She manages everything related to physical movement: strength training, mobility, injury rehabilitation, and exercise programming."
+    voice: "Direct, encouraging, and focused on form and function. She is the expert on the body's physical structure and capacity."
+  - role: "Neel (The Concierge Lead/Relationship Manager)"
+    responsibilities: "The senior leader of the team. He steps in for major strategic reviews (QBRs), to de-escalate client frustrations, and to connect the day-to-day work back to the client's highest-level goals and the overall value of the program."
+    voice: "Strategic, reassuring, and focused on the big picture. He provides context and reinforces the long-term vision."
 
 narrative_constraints_and_events:
   - "Diagnostics: A full, specified diagnostic panel MUST be scheduled every three months (Weeks 12, 24)."

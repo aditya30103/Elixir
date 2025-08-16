@@ -12,8 +12,8 @@ config_path = current_dir / 'config' / 'agents.yaml'
 with open(config_path, 'r') as f:
     agents_config = yaml.safe_load(f)
 
-llm1 = ChatLiteLLM(model="gemini/gemini-1.5-flash")
-llm2 = ChatLiteLLM(model="gemini/gemini-2.5-pro")
+llm_flash = ChatLiteLLM(model="gemini/gemini-2.5-flash")
+llm_pro = ChatLiteLLM(model="gemini/gemini-2.5-pro")
 
 class NarrativeAgents():
     def __init__(self):
@@ -42,40 +42,40 @@ class NarrativeAgents():
     
     # --- AGENT METHODS ---
     def strategic_narrative_architect(self):
-        return Agent(config=agents_config['strategic_narrative_architect'], llm=llm2, verbose=True)
+        return Agent(config=agents_config['strategic_narrative_architect'], llm=llm_pro, verbose=True)
 
     def routing_agent(self):
-        return Agent(config=agents_config['routing_agent'], llm=llm1)
+        return Agent(config=agents_config['routing_agent'], llm=llm_flash)
 
     def rohan_patel_agent(self):
-        return Agent(config=agents_config['rohan_patel_agent'], llm=llm1, verbose=False)
+        return Agent(config=agents_config['rohan_patel_agent'], llm=llm_pro, verbose=False)
 
     def sarah_tan_agent(self):
-        return Agent(config=agents_config['sarah_tan_agent'], llm=llm1, verbose=False)
+        return Agent(config=agents_config['sarah_tan_agent'], llm=llm_pro, verbose=False)
 
     def ruby_concierge_agent(self):
-        return Agent(config=agents_config['ruby_concierge_agent'], llm=llm1, verbose=False)
+        return Agent(config=agents_config['ruby_concierge_agent'], llm=llm_pro, verbose=False)
     
     def dr_warren_agent(self):
-        return Agent(config=agents_config['dr_warren_agent'], llm=llm1, verbose=False)
+        return Agent(config=agents_config['dr_warren_agent'], llm=llm_pro, verbose=False)
 
     def advik_scientist_agent(self):
-        return Agent(config=agents_config['advik_scientist_agent'], llm=llm1, verbose=False)
+        return Agent(config=agents_config['advik_scientist_agent'], llm=llm_pro, verbose=False)
 
     def carla_nutritionist_agent(self):
-        return Agent(config=agents_config['carla_nutritionist_agent'], llm=llm1, verbose=False)
+        return Agent(config=agents_config['carla_nutritionist_agent'], llm=llm_pro, verbose=False)
 
     def rachel_pt_agent(self):
-        return Agent(config=agents_config['rachel_pt_agent'], llm=llm1, verbose=False)
+        return Agent(config=agents_config['rachel_pt_agent'], llm=llm_pro, verbose=False)
 
     def neel_lead_agent(self):
-        return Agent(config=agents_config['neel_lead_agent'], llm=llm1, verbose=False)
+        return Agent(config=agents_config['neel_lead_agent'], llm=llm_pro, verbose=False)
     
     def summary_agent(self):
-        return Agent(config=agents_config['summary_agent'], llm=llm1)
+        return Agent(config=agents_config['summary_agent'], llm=llm_flash)
     
     def conversation_critic_agent(self):
-        return Agent(config=agents_config['conversation_critic_agent'], llm=llm2, verbose=True)
+        return Agent(config=agents_config['conversation_critic_agent'], llm=llm_pro, verbose=True)
     
     def conversation_refiner_agent(self):
-        return Agent(config=agents_config['conversation_refiner_agent'], llm=llm2, verbose=True)
+        return Agent(config=agents_config['conversation_refiner_agent'], llm=llm_pro, verbose=True)
