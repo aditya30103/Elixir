@@ -1,17 +1,23 @@
 import { NextResponse } from "next/server";
 import journeyData from "@/data/journey.json";
+import { JourneyData, Episode, Event } from "@/types/journey";
 
-// This API will return the reasoning ("why") for a given eventId
+// Cast JSON as JourneyData
+const data: JourneyData = journeyData as JourneyData;
+
 export async function POST(req: Request) {
   try {
     const { eventId } = await req.json();
 
-    // Search all episodes & events for this eventId
-    let foundEvent = null;
-    for (const ep of journeyData.episodes) {
-      const match = ep.granularEvents.find((ev: any) => ev.eventId === eventId);
+    let foundEvent: Event | null = null;
+    let parentEpisode: Episode | null = null;
+
+    // Search for event inside episodes
+    for (const ep of data.episodes) {
+      const match = ep.granularEvents.find((ev) => ev.eventId === eventId);
       if (match) {
         foundEvent = match;
+        parentEpisode = ep;
         break;
       }
     }
@@ -23,19 +29,19 @@ export async function POST(req: Request) {
       );
     }
 
-    // For now: return the sourceCommunication as the "why"
-    // Later: replace this with a vector DB lookup + LLM call
+    // For now: return sourceCommunication as the "why"
     return NextResponse.json({
       eventId,
       why: foundEvent.sourceCommunication,
       source: {
-        episodeTitle: journeyData.episodes.find((ep: any) =>
-          ep.granularEvents.some((ev: any) => ev.eventId === eventId)
-        )?.title,
+        episodeTitle: parentEpisode?.title,
         eventTitle: foundEvent.title,
       },
     });
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
+  } catch (err) {
+    if (err instanceof Error) {
+      return NextResponse.json({ error: err.message }, { status: 500 });
+    }
+    return NextResponse.json({ error: "Unknown error" }, { status: 500 });
   }
 }
