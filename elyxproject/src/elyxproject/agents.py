@@ -74,6 +74,9 @@ class NarrativeAgents():
     def summary_agent(self):
         return Agent(config=agents_config['summary_agent'], llm=llm_flash)
     
+    def elyx_analyst_agent(self):
+        return Agent(config=agents_config['elyx_analyst_agent'], llm=llm_pro, verbose=True)
+    
     def conversation_critic_agent(self):
         return Agent(config=agents_config['conversation_critic_agent'], llm=llm_pro, verbose=True)
     

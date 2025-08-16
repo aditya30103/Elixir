@@ -1,0 +1,4019 @@
+[
+  {
+    "data_type": "scheduling_inquiry",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "recipient": "Rohan Patel",
+      "contact_method": "Phone call",
+      "topic": "Schedule initial consultation with Dr. Warren",
+      "time_frame": "Next week"
+    }
+  },
+  {
+    "data_type": "appointment_scheduling",
+    "source": "Rohan Patel",
+    "details": {
+      "consult_with": "Dr. Warren",
+      "setup_with": "Advik",
+      "topics": [
+        "consultation scheduling",
+        "wearable setup",
+        "data-driven rationale"
+      ]
+    }
+  },
+  {
+    "data_type": "scheduling",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "appointments": [
+        {
+          "doctor": "Dr. Warren",
+          "date_options": [
+            "Next Tuesday afternoon",
+            "Next Thursday afternoon"
+          ],
+          "type": "Initial Consultation"
+        },
+        {
+          "doctor": "Advik",
+          "date": "Next Wednesday",
+          "type": "Wearable Setup"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "appointment_schedule",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "doctor": "Dr. Warren",
+      "date": "8/27/25",
+      "time": "2:00 PM",
+      "type": "Initial Consultation"
+    }
+  },
+  {
+    "data_type": "appointment_reminder",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "member_name": "Rohan Patel",
+      "appointment_type": "Nutrition Assessment",
+      "reminder_sent": "2025-08-25T12:58:00",
+      "instructions": "Complete a 3-day food log before the appointment.  Focus on portion sizes and ingredients."
+    }
+  },
+  {
+    "data_type": "appointment_scheduling",
+    "source": "Rohan Patel",
+    "details": {
+      "appointments": [
+        {
+          "doctor": "Dr. Warren",
+          "date": "8/27/25",
+          "time": "Afternoon"
+        },
+        {
+          "technician": "Advik",
+          "date": "8/28/25",
+          "time": "To be confirmed"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "appointment",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "appointment_type": "Wearable Setup",
+      "date": "2025-08-27",
+      "time": "14:00",
+      "member": "Rohan Patel"
+    }
+  },
+  {
+    "data_type": "Appointment Scheduled",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "member": "Rohan Patel",
+      "appointment_type": "Nutrition Assessment",
+      "date": "8/27/25",
+      "time": "To be determined",
+      "notes": "Rohan to submit a 3-day food log beforehand."
+    }
+  },
+  {
+    "data_type": "appointment_schedule",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "appointments": [
+        {
+          "doctor": "Dr. Warren",
+          "date": "2025-08-27",
+          "time": "2:00 PM",
+          "type": "Initial Medical Consult"
+        },
+        {
+          "doctor": "Advik",
+          "date": "2025-08-28",
+          "time": "2:00 PM",
+          "type": "Wearable Setup"
+        },
+        {
+          "doctor": "Carla",
+          "date": "2025-08-29",
+          "time": "10:00 AM",
+          "type": "Nutrition Assessment"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "appointment",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "2025-08-26",
+      "time": "16:00",
+      "topic": "Nutrition Plan Discussion & Delivery",
+      "recipient": "Rohan Patel"
+    }
+  },
+  {
+    "data_type": "Member Inquiry",
+    "source": "Rohan Patel",
+    "details": {
+      "inquiry_timestamp": "2025-08-25T17:30:00",
+      "topics": [
+        "Blood Pressure Reduction",
+        "Nutrition Plan Adjustments",
+        "Travel Impact on Plan"
+      ]
+    }
+  },
+  {
+    "data_type": "nutrition_plan_summary",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "plan_name": "Heart Health & Stable Energy Plan",
+      "key_components": [
+        "Whole foods focus",
+        "Portion control",
+        "Reduced sodium intake",
+        "Reduced saturated fat intake"
+      ],
+      "expected_outcomes": {
+        "blood_pressure_reduction": "5-10% reduction in systolic/diastolic within 4-6 weeks (individual results may vary)",
+        "travel_adjustments": "Pack healthy snacks; prioritize sleep despite potential disruption; plan adjustments will be made based on collected data"
+      },
+      "date_created": "08/25/2025"
+    }
+  },
+  {
+    "data_type": "Query",
+    "source": "Rohan Patel",
+    "details": {
+      "query_timestamp": "2025-08-25T18:05:00",
+      "query_details": "Request for specific sodium/saturated fat reduction targets and recommended healthy travel snacks.  Also requested a detailed nutrition plan."
+    }
+  },
+  {
+    "data_type": "nutrition_plan",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "plan_name": "Rohan Patel - Week 1 Nutrition Plan",
+      "sodium_reduction_target": "50%",
+      "saturated_fat_reduction_target": "50%",
+      "recommended_travel_snacks": [
+        "nuts",
+        "fruit",
+        "protein bars"
+      ],
+      "plan_details": "A detailed nutrition plan with meal suggestions and portion sizes focusing on whole foods, reducing sodium, and saturated fats to support BP and heart health."
+    }
+  },
+  {
+    "data_type": "wearable_data_summary",
+    "source": "Whoop",
+    "details": {
+      "date_range": "2025-08-25 to 2025-08-28",
+      "sleep_duration": {
+        "average": "6.5 hours",
+        "variation": "-1.5 hours from baseline"
+      },
+      "resting_heart_rate": {
+        "average": "62 bpm",
+        "variation": "+5 bpm from baseline"
+      },
+      "hrv": {
+        "average": "35ms",
+        "variation": "-15ms from baseline"
+      },
+      "recovery": {
+        "average": "65%",
+        "variation": "-10% from baseline"
+      },
+      "notes": "Data reflects travel to Jakarta. Lower sleep duration and reduced HRV observed."
+    }
+  },
+  {
+    "data_type": "Wearable Data Summary",
+    "source": "Whoop",
+    "details": {
+      "trip": "Jakarta",
+      "sleep_duration": "Decreased",
+      "HRV": "Lower variability",
+      "recovery": "Reduced"
+    }
+  },
+  {
+    "data_type": "Wearable Data Summary",
+    "source": "Whoop",
+    "details": {
+      "trip": "Jakarta",
+      "sleep_duration": {
+        "average": "5.5 hours",
+        "change_from_baseline": "-2 hours"
+      },
+      "HRV": {
+        "average": "30 ms",
+        "change_from_baseline": "-15 ms"
+      },
+      "recovery": {
+        "average": "45%",
+        "change_from_baseline": "-20%"
+      }
+    }
+  },
+  {
+    "data_type": "Whoop Data Summary",
+    "source": "Whoop Strap",
+    "details": {
+      "date_range": "August 25th - August 28th, 2025",
+      "average_sleep_duration": "5.5 hours",
+      "average_HRV": "30 ms",
+      "average_recovery": "45%",
+      "notes": "Significantly lower than baseline due to travel and adjustments to sleep schedule in Jakarta."
+    }
+  },
+  {
+    "data_type": "sleep_recommendations",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "recommendations": [
+        "Maintain consistent sleep schedule, even during travel.",
+        "Minimize screen time before bed.",
+        "Consider melatonin or a sleep supplement for travel."
+      ],
+      "rationale": "To mitigate the negative impact of travel on sleep duration and quality, as observed in the initial Whoop data."
+    }
+  },
+  {
+    "data_type": "Scheduling Request",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "meeting_type": "Adherence Check-in",
+      "attendees": [
+        "Rohan Patel",
+        "Neel (Concierge Lead)"
+      ],
+      "requested_by": "Ruby",
+      "status": "Pending"
+    }
+  },
+  {
+    "data_type": "appointment",
+    "source": "Rohan Patel's calendar",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "topic": "Workout adherence discussion",
+      "date": "2025-08-27",
+      "time": "14:00"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Elyx Calendar",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "date": "2025-08-27",
+      "time": "14:00",
+      "topic": "Week 3 Progress Review and Adherence Strategy"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Neel",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "topic": "Progress Review and Travel Optimization Strategies",
+      "time": "8/27/25, 2:00 PM"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "meeting_id": "QBR_Rohan_Week3",
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "date": "08/27/2025",
+      "time": "2:00 PM",
+      "topic": "Progress Review & Travel Optimization Strategy",
+      "status": "Scheduled"
+    }
+  },
+  {
+    "data_type": "meeting_reminder",
+    "source": "Neel",
+    "details": {
+      "meeting_time": "8/27/25, 2:00 PM",
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "topic": "Progress Review and Travel Optimization Strategy"
+    }
+  },
+  {
+    "data_type": "Activity Log",
+    "source": "Whoop & Self-Report",
+    "details": {
+      "week_number": 3,
+      "missed_workouts": 2,
+      "reason": "Unforeseen late-night meetings during travel",
+      "sleep_data": {
+        "average_sleep_duration": "5.5 hours",
+        "average_HRV": "30 ms"
+      }
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "meeting_time": "8/28/25, 2:00 PM",
+      "attendees": [
+        "Rohan Patel",
+        "Neel",
+        "Advik",
+        "Rachel"
+      ],
+      "agenda": [
+        "Review Week 3 data (sleep, HRV, activity)",
+        "Discuss plan adjustments for travel weeks",
+        "Brainstorm solutions for flexible scheduling",
+        "Actionable steps for improved adherence"
+      ]
+    }
+  },
+  {
+    "data_type": "exercise_plan_update",
+    "source": "Rachel (PT)",
+    "details": {
+      "date": "08/27/2025",
+      "plan_update": "Modified exercise plan to include bodyweight circuits and short, high-intensity workouts suitable for travel.  Focus on maintaining mobility and core strength."
+    }
+  },
+  {
+    "data_type": "lab_results",
+    "source": "Hospital X Lab",
+    "details": {
+      "patient_id": "RohanPatel123",
+      "date": "08/27/2025",
+      "tests": [
+        {
+          "test_name": "Cholesterol Panel",
+          "results": {
+            "Total Cholesterol": "210 mg/dL",
+            "LDL Cholesterol": "140 mg/dL",
+            "HDL Cholesterol": "50 mg/dL",
+            "Triglycerides": "160 mg/dL"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "Appointment Scheduled",
+    "source": "Rohan Patel",
+    "details": {
+      "appointment_type": "Follow-up Discussion",
+      "physician": "Dr. Warren",
+      "date": "09/03/25",
+      "time": "10:00 AM"
+    }
+  },
+  {
+    "data_type": "query",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "query_timestamp": "2025-08-27T17:47:00",
+      "query_topic": "Sleep and HRV tracking during US trip",
+      "recipient": "Rohan Patel"
+    }
+  },
+  {
+    "data_type": "sleep_data",
+    "source": "Whoop",
+    "details": {
+      "date": "8/26/25",
+      "sleep_duration": "5 hours",
+      "REM_sleep": "1 hour",
+      "deep_sleep": "0.5 hours",
+      "HRV": "30ms (significantly lower than baseline)"
+    }
+  },
+  {
+    "data_type": "Wearable Data Analysis",
+    "source": "Whoop",
+    "details": {
+      "trip": "US Trip (Week 4)",
+      "sleep_metrics": {
+        "average_sleep_duration": "5.5 hours",
+        "average_REM_sleep": "15%",
+        "average_deep_sleep": "10%",
+        "consistency": "low"
+      },
+      "hrv_metrics": {
+        "average_hrv": "30 ms",
+        "consistency": "low"
+      },
+      "notes": "Data incomplete due to inconsistent tracking.  Significant reduction in sleep duration and HRV observed during jet lag."
+    }
+  },
+  {
+    "data_type": "Wearable Data Summary",
+    "source": "Whoop",
+    "details": {
+      "date_range": "8/26/25 - 8/27/25",
+      "sleep_duration": "5.5 hours",
+      "sleep_quality": "Poor",
+      "hrv_average": "30ms (significantly below baseline)",
+      "recovery": "Low"
+    }
+  },
+  {
+    "data_type": "Whoop Data Summary",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "date_range": "August 25th-27th, 2025",
+      "sleep_duration": "significantly reduced",
+      "hrv": "significantly reduced",
+      "notes": "Data incomplete due to travel and jet lag.  Further analysis pending complete data."
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_topic": "Jet lag mitigation strategies",
+      "attendees": [
+        "Rohan Patel",
+        "Advik"
+      ],
+      "requested_time": "To be determined",
+      "duration": "15 minutes"
+    }
+  },
+  {
+    "data_type": "Whoop Sleep & HRV Data",
+    "source": "Whoop Strap",
+    "details": {
+      "trip": "US Trip (Week 4)",
+      "sleep_duration": [
+        "Mon: 6 hours",
+        "Tue: 4.5 hours",
+        "Wed: 5 hours",
+        "Thu: 6.5 hours",
+        "Fri: 7 hours",
+        "Sat: 8 hours"
+      ],
+      "hrv_average": [
+        "Mon: 35ms",
+        "Tue: 28ms",
+        "Wed: 32ms",
+        "Thu: 38ms",
+        "Fri: 42ms",
+        "Sat: 45ms"
+      ],
+      "sleep_quality": [
+        "Mon: Poor",
+        "Tue: Very Poor",
+        "Wed: Poor",
+        "Thu: Fair",
+        "Fri: Good",
+        "Sat: Good"
+      ]
+    }
+  },
+  {
+    "data_type": "Food Log Compliance",
+    "source": "Self-reported data and food log analysis",
+    "details": {
+      "week": 5,
+      "compliance_rate": 0.5,
+      "missed_meals": [
+        "Breakfast",
+        "Lunch"
+      ],
+      "days_missed": 3
+    }
+  },
+  {
+    "data_type": "Self-reported adherence",
+    "source": "Rohan Patel",
+    "details": {
+      "week": 5,
+      "nutrition_log_completion": "50%",
+      "reason_for_non_adherence": "Lack of convenient logging methods during meetings and travel"
+    }
+  },
+  {
+    "data_type": "HRV and Stress Correlation",
+    "source": "Whoop",
+    "details": {
+      "date": "08/27/2025",
+      "HRV_dips": [
+        {
+          "time": "10:00 AM",
+          "value": 30,
+          "stress_level": "High"
+        },
+        {
+          "time": "3:00 PM",
+          "value": 25,
+          "stress_level": "High"
+        }
+      ],
+      "notes": "Significant HRV dips observed on days with reported high-stress meetings.  Further analysis needed to determine causality and potential interventions."
+    }
+  },
+  {
+    "data_type": "HRV Analysis",
+    "source": "Whoop",
+    "details": {
+      "date": "08/27/2025",
+      "average_hrv": 45,
+      "lowest_hrv": 38,
+      "stress_events": [
+        {
+          "time": "10:00 AM",
+          "description": "High-pressure meeting"
+        },
+        {
+          "time": "4:00 PM",
+          "description": "Client negotiation"
+        }
+      ],
+      "hypothesis": "Stress management techniques can improve HRV",
+      "next_steps": "Discuss stress management strategies; suggest specific techniques (e.g., mindfulness, breathing exercises) and track HRV response"
+    }
+  },
+  {
+    "data_type": "Exercise Plan Update",
+    "source": "Rachel (PT)",
+    "details": {
+      "date": "08/28/2025",
+      "plan_update": "Transitioning to bodyweight exercises and short, high-intensity workouts suitable for travel.  Detailed plan to be sent within 24 hours."
+    }
+  },
+  {
+    "data_type": "nutrition_plan_update",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "08/28/2025",
+      "update": "Recommended voice-to-text app for food logging and pre-planned meals for travel to improve adherence.  Will discuss gut health next."
+    }
+  },
+  {
+    "data_type": "Nutrition Plan Update",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "08/28/2025",
+      "update": "Recommended voice-to-text apps for easier food logging and pre-planned meals for travel days.  Will discuss gut health optimization in the next session."
+    }
+  },
+  {
+    "data_type": "Food Log Compliance",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "week": 5,
+      "compliance_rate": 0.5,
+      "missed_entries": [
+        "Breakfast",
+        "Lunch",
+        "Breakfast",
+        "Lunch",
+        "Lunch"
+      ]
+    }
+  },
+  {
+    "data_type": "Member Feedback",
+    "source": "Rohan Patel",
+    "details": {
+      "timestamp": "2025-08-28T07:45:00",
+      "feedback": "Requesting data on impact of inconsistent food logging and evidence for gut health recommendations."
+    }
+  },
+  {
+    "data_type": "HRV and Stress Correlation",
+    "source": "Whoop",
+    "details": {
+      "correlation_coefficient": "-0.75",
+      "p_value": "0.001",
+      "stress_events": [
+        "Late-night meetings in Jakarta",
+        "Flight delays",
+        "Missed sleep due to time zone changes"
+      ],
+      "hrv_reduction_percentage": "20%"
+    }
+  },
+  {
+    "data_type": "Concierge Check-in",
+    "source": "Neel",
+    "details": {
+      "timestamp": "2025-08-28T10:15:00",
+      "topic": "Travel adherence and nutrition logging"
+    }
+  },
+  {
+    "data_type": "missed_workout",
+    "source": "self-reported",
+    "details": {
+      "date": "2025-08-27",
+      "workout_type": "run",
+      "reason_missed": "travel fatigue",
+      "duration_missed": "30 mins"
+    }
+  },
+  {
+    "data_type": "meeting_notes",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "meeting_date": "08/28/2025",
+      "meeting_time": "10:45 AM",
+      "attendees": [
+        "Neel",
+        "Rohan Patel"
+      ],
+      "topics_discussed": [
+        "Travel adherence strategies",
+        "Nutrition during travel",
+        "Modified workout plan"
+      ],
+      "action_items": [
+        "Adapt Rohan's workout plan for travel",
+        "Discuss travel nutrition optimization"
+      ]
+    }
+  },
+  {
+    "data_type": "Member Feedback",
+    "source": "Rohan Patel",
+    "details": {
+      "timestamp": "2025-08-28T11:57:00",
+      "feedback": "Requesting data to support the proposed exercise and nutrition plan during travel, specifically regarding blood pressure reduction."
+    }
+  },
+  {
+    "data_type": "Meeting Request",
+    "source": "Dr. Warren",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Dr. Warren",
+        "Advik",
+        "Carla"
+      ],
+      "topic": "Data Review: Exercise & Nutrition Impact on BP",
+      "date": "2025-08-29",
+      "time": "10:00 AM"
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Advik",
+        "Carla"
+      ],
+      "topic": "Data-driven travel adherence strategies",
+      "time": "Tomorrow afternoon",
+      "status": "pending"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Dr. Warren",
+    "details": {
+      "meeting_topic": "Data Review: Exercise & Nutrition Strategies for Travel Adherence",
+      "attendees": [
+        "Rohan Patel",
+        "Dr. Warren",
+        "Advik",
+        "Carla"
+      ],
+      "date": "08/29/25",
+      "time": "2:00 PM"
+    }
+  },
+  {
+    "data_type": "Meeting Scheduled",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Carla (Nutritionist)",
+        "Advik (Performance Scientist)"
+      ],
+      "date": "August 29th, 2025",
+      "time": "2:00 PM SGT",
+      "topic": "Data Review: Exercise and Nutrition Strategies for Travel Adherence",
+      "agenda_items": [
+        "Evidence for exercise's impact on BP reduction",
+        "Data on the effects of consistent vs. inconsistent nutrition logging on BP",
+        "Supporting data for gut health recommendations",
+        "Strategies for travel adherence"
+      ]
+    }
+  },
+  {
+    "data_type": "Meeting Request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_topic": "Review of data supporting exercise and nutrition strategies",
+      "attendees": [
+        "Rohan Patel",
+        "Advik",
+        "Carla"
+      ],
+      "date": "August 29, 2025",
+      "time": "2:00 PM"
+    }
+  },
+  {
+    "data_type": "Whoop Data Correlation",
+    "source": "Whoop",
+    "details": {
+      "correlation": "-0.75",
+      "variables": [
+        "HRV",
+        "Cognitive Drill Completion"
+      ],
+      "time_period": "Week 6",
+      "notes": "Negative correlation suggests lower HRV associated with missed cognitive drills."
+    }
+  },
+  {
+    "data_type": "Member Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "Data & Rationale",
+      "data_requested": [
+        "Raw Whoop data correlating HRV and cognitive drills",
+        "Evidence-based rationale and quantifiable data for brain-boosting foods"
+      ],
+      "timestamp": "2025-08-28T17:37:00"
+    }
+  },
+  {
+    "data_type": "nutrition_plan_request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "evidence_based_rationale",
+      "topic": "brain-boosting_foods",
+      "timestamp": "2025-08-28T17:58:00"
+    }
+  },
+  {
+    "data_type": "correlation_analysis",
+    "source": "Whoop & Self-Reported Data",
+    "details": {
+      "correlation_coefficient": -0.75,
+      "p_value": 0.02,
+      "variables": [
+        "HRV",
+        "Cognitive Drill Consistency"
+      ],
+      "notes": "Significant negative correlation observed; lower HRV associated with reduced cognitive drill adherence."
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "requested_participants": [
+        "Advik",
+        "Carla"
+      ],
+      "topic": "Review of HRV data and brain-boosting food rationale",
+      "proposed_time": "Tomorrow morning (before meetings)"
+    }
+  },
+  {
+    "data_type": "Food Log Review",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "timestamp": "8/28/25 7:42 PM",
+      "member": "Rohan Patel",
+      "review_summary": "Initial review shows inconsistent meal timing and limited intake of brain-boosting nutrients.  Further analysis and recommendations to follow."
+    }
+  },
+  {
+    "data_type": "correlation_analysis",
+    "source": "Whoop & Self-reported data",
+    "details": {
+      "correlation_coefficient": 0.78,
+      "p_value": 0.001,
+      "variables": [
+        "HRV",
+        "Cognitive Function Score"
+      ],
+      "notes": "Strong positive correlation observed between HRV and self-reported cognitive function scores.  Higher HRV associated with improved cognitive performance."
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "clarification and data",
+      "topic": "Cognitive Enhancement Plan",
+      "specific_requests": [
+        "Quantifiable benefits of cognitive drills on work performance",
+        "Specific examples of brain-boosting foods and their impact on blood pressure"
+      ]
+    }
+  },
+  {
+    "data_type": "Nutrition Plan Update",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "08/28/2025",
+      "time": "22:47",
+      "update": "Added brain-boosting food suggestions: blueberries, fatty fish, eggs.  Emphasis on their impact on cognitive function and blood pressure.  Plan to track ROI on improved cognitive function."
+    }
+  },
+  {
+    "data_type": "Medical Instructions",
+    "source": "Dr. Warren",
+    "details": {
+      "instruction": "Fasting for 12 hours prior to blood draw. Maintain consistent sleep schedule before blood draw.",
+      "reason": "Optimize diagnostic results by minimizing variables like blood sugar and cortisol levels.",
+      "patient": "Rohan Patel",
+      "date": "August 29, 2025"
+    }
+  },
+  {
+    "data_type": "appointment_scheduling",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "appointments": [
+        {
+          "date": null,
+          "time": null,
+          "type": "Fasting Blood Draw",
+          "with": "Dr. Warren"
+        },
+        {
+          "date": "08/31/2025",
+          "time": "09:00 AM",
+          "type": "Check-in",
+          "with": "Rohan Patel"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "inquiry",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "recipient": "Rohan Patel",
+      "topic": "Pre-diagnostic data review",
+      "questions": [
+        "How's your sleep been leading up to your blood draw?",
+        "Any noticeable trends in your HRV lately?"
+      ]
+    }
+  },
+  {
+    "data_type": "Scheduling Request",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "request_type": "Appointment Confirmation & Follow-up Call",
+      "recipient": "Rohan Patel",
+      "appointment_type": "Fasting Blood Draw",
+      "doctor": "Dr. Warren",
+      "follow_up_call_time": "Monday Morning"
+    }
+  },
+  {
+    "data_type": "scheduling_request",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "recipient": "Sarah (Rohan's PA)",
+      "requests": [
+        {
+          "task": "Confirm blood draw time with Dr. Warren",
+          "recipient": "Dr. Warren"
+        },
+        {
+          "task": "Schedule check-in with Rohan",
+          "time": "9:00 AM (Rohan's time)",
+          "day": "Monday"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "appointment_request",
+    "source": "Rohan Patel",
+    "details": {
+      "appointment_type": "fasting blood draw",
+      "request_time": "02:59 AM, August 29, 2025",
+      "additional_requests": [
+        "2-month data overview from Advik",
+        "detailed pre-diagnostic preparation instructions"
+      ]
+    }
+  },
+  {
+    "data_type": "appointment",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "appointment_type": "Fasting Blood Draw",
+      "date": "2025-09-02",
+      "time": "07:00 AM",
+      "instructions": "Fast for at least 12 hours prior to the appointment."
+    }
+  },
+  {
+    "data_type": "Wearable Data Summary",
+    "source": "Whoop & Garmin",
+    "details": {
+      "sleep": {
+        "average_sleep_duration": "6.5 hours",
+        "sleep_consistency": "Inconsistent, particularly during travel",
+        "sleep_quality_score": "65/100 (average)",
+        "sleep_debt": "Accumulated 8 hours of sleep debt over the past two weeks"
+      },
+      "hrv": {
+        "average_hrv": "45 ms",
+        "hrv_consistency": "Inconsistent, showing a decline during travel and periods of high stress",
+        "hrv_trends": "A negative correlation observed between lower HRV and days with missed workouts or inconsistent meal timing"
+      },
+      "recovery": {
+        "average_recovery_score": "60/100",
+        "recovery_trends": "Recovery scores correlated with sleep duration and HRV"
+      },
+      "activity": {
+        "average_daily_steps": "7,500",
+        "workout_adherence": "Inconsistent (50%), showing impact on sleep and recovery"
+      }
+    }
+  },
+  {
+    "data_type": "appointment_confirmation",
+    "source": "Sarah Tan",
+    "details": {
+      "appointment_type": "blood draw",
+      "date": "09/03/25",
+      "time": "7:00 AM",
+      "location": "Dr. Warren's office",
+      "patient": "Rohan Patel"
+    }
+  },
+  {
+    "data_type": "checklist",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "checklist_items": [
+        "Fast for 12 hours before blood draw (7 AM Tuesday)",
+        "Avoid strenuous exercise the morning of the blood draw",
+        "Ensure adequate hydration",
+        "Review 2-month data overview from Advik",
+        "Prepare any questions for Dr. Warren"
+      ],
+      "due_date": "2025-08-31T23:59:00Z"
+    }
+  },
+  {
+    "data_type": "appointment_reminder",
+    "source": "Dr. Warren",
+    "details": {
+      "appointment_type": "blood_draw",
+      "date": "09/02/25",
+      "time": "7:00 AM",
+      "preparation_instructions": "12-hour fast, prioritize sleep"
+    }
+  },
+  {
+    "data_type": "Query",
+    "source": "Rohan Patel",
+    "details": {
+      "query": "Pre-blood draw recommendations beyond fasting.",
+      "timestamp": "8/29/25, 7:25 AM"
+    }
+  },
+  {
+    "data_type": "Scheduling Update",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "date": "2025-08-29",
+      "time": "07:58",
+      "meeting_topic": "Pre-blood draw consultation",
+      "scheduled_time": "2025-08-31 09:00"
+    }
+  },
+  {
+    "data_type": "query",
+    "source": "Rohan Patel",
+    "details": {
+      "query_topics": [
+        "HRV dips during travel",
+        "Exercise protocol before blood draw"
+      ],
+      "timestamp": "8/29/25, 9:15 AM"
+    }
+  },
+  {
+    "data_type": "communication_log",
+    "source": "Advik",
+    "details": {
+      "recipient": "Rohan Patel",
+      "timestamp": "8/29/25, 9:25 AM",
+      "message": "Regarding pre-blood draw exercise: Light activity is fine, but avoid intense workouts 24 hours prior. Let's discuss your HRV dips during travel on Monday."
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "participants": [
+        "Rohan Patel",
+        "Advik",
+        "Dr. Warren"
+      ],
+      "topic": "Pre-blood draw preparation and data review",
+      "time": "Monday morning",
+      "agenda_items": [
+        "HRV dips during travel",
+        "Impact of sleep on blood test results",
+        "Pre-blood draw exercise protocol"
+      ]
+    }
+  },
+  {
+    "data_type": "appointment",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-09-01",
+      "time": "09:00",
+      "type": "phone call",
+      "participants": [
+        "Rohan Patel",
+        "Advik"
+      ],
+      "purpose": "Pre-diagnostic consultation; discuss HRV, sleep, and exercise protocols before blood draw."
+    }
+  },
+  {
+    "data_type": "query",
+    "source": "Rohan Patel",
+    "details": {
+      "query_topic": "Impact of exercise on blood test results",
+      "query_details": "Request for data on how much moderate exercise on the day before a blood test affects the results."
+    }
+  },
+  {
+    "data_type": "pre-diagnostic_exercise_guidance",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "date": "08/29/2025",
+      "time": "12:22 PM",
+      "guidance": "Moderate exercise is acceptable, but avoid intense workouts.  Minor alterations to some blood test results are possible, but not a significant concern."
+    }
+  },
+  {
+    "data_type": "Medical Instruction",
+    "source": "Dr. Warren",
+    "details": {
+      "instruction": "Minimize strenuous activity and prioritize sleep before blood draw.",
+      "date": "08/29/2025",
+      "time": "1:57 PM"
+    }
+  },
+  {
+    "data_type": "Medical Result Summary",
+    "source": "Dr. Warren",
+    "details": {
+      "cholesterol": "Slightly elevated",
+      "vitamin_d": "Low",
+      "other_results": "To be discussed further"
+    }
+  },
+  {
+    "data_type": "appointment_reminder",
+    "source": "Rohan Patel",
+    "details": {
+      "appointment_time": "8/30/25, 9:00 AM",
+      "appointment_type": "Follow-up discussion regarding bloodwork results and travel strategies"
+    }
+  },
+  {
+    "data_type": "Lab Results & Supplement Recommendation",
+    "source": "Dr. Warren & Advik",
+    "details": {
+      "Vitamin D level": "25 ng/ml",
+      "Supplement Recommendation": "Vitamin D3 (5000 IU daily)",
+      "Optimal Vitamin D range": "30-50 ng/ml"
+    }
+  },
+  {
+    "data_type": "Medical Plan Adjustment",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "08/29/2025",
+      "adjustments": [
+        {
+          "issue": "Slightly elevated cholesterol",
+          "plan": "Dietary and lifestyle adjustments (details to follow)"
+        },
+        {
+          "issue": "Low Vitamin D (25 ng/ml)",
+          "plan": "Supplement with Vitamin D3 (5000 IU daily)"
+        }
+      ],
+      "recommendations": [
+        "Prioritize consistent sleep before travel",
+        "Maintain consistent supplement intake during travel"
+      ]
+    }
+  },
+  {
+    "data_type": "Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_items": [
+        "Detailed bloodwork data",
+        "Rationale for 5000 IU Vitamin D3 dosage",
+        "Practical travel tips for supplement adherence (pill cases, reminder apps, etc.)"
+      ]
+    }
+  },
+  {
+    "data_type": "lab_results",
+    "source": "Bloodwork",
+    "details": {
+      "cholesterol": "210 mg/dL",
+      "vitamin_d": "25 ng/ml"
+    }
+  },
+  {
+    "data_type": "question",
+    "source": "Rohan Patel",
+    "details": {
+      "topic": "Vitamin D3 Dosage",
+      "question": "What is the evidence-based justification for a 5000 IU daily dose of Vitamin D3 compared to alternative dosages (e.g., 2000 IU or 10000 IU)?  Request quantifiable data to support the chosen dosage."
+    }
+  },
+  {
+    "data_type": "research_article",
+    "source": "PubMed",
+    "details": {
+      "title": "Meta-analysis of Vitamin D Supplementation Dosages",
+      "authors": [
+        "Smith, J.",
+        "Doe, J."
+      ],
+      "link": "https://pubmed.ncbi.nlm.nih.gov/examplelink",
+      "key_findings": [
+        "5000 IU/day is generally effective for raising Vitamin D levels in deficient individuals.",
+        "Higher doses may be needed depending on individual factors and response."
+      ]
+    }
+  },
+  {
+    "data_type": "Medical Advice",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "08/30/2025",
+      "time": "10:37 AM",
+      "patient": "Rohan Patel",
+      "advice": "Review Advik's meta-analysis on Vitamin D dosage. Manage slightly elevated cholesterol and low Vitamin D through consistent supplementation and dietary adjustments."
+    }
+  },
+  {
+    "data_type": "Supplement Recommendation",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "supplement": "Vitamin D3",
+      "dosage": "5000 IU",
+      "frequency": "Daily",
+      "reason": "Low Vitamin D levels (25 ng/ml) per bloodwork results."
+    }
+  },
+  {
+    "data_type": "Meeting Request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_topic": "Vitamin D3 Dosage Justification and Travel Strategies",
+      "attendees": [
+        "Rohan Patel",
+        "Carla"
+      ],
+      "requested_time": "To be scheduled"
+    }
+  },
+  {
+    "data_type": "Supplement Recommendation",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "supplement": "Vitamin D3",
+      "dosage": "5000 IU",
+      "reason": "Correct Vitamin D deficiency (25 ng/ml)",
+      "travel_recommendations": "To be sent separately"
+    }
+  },
+  {
+    "data_type": "supplement_recommendation",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "supplement": "Vitamin D3",
+      "dosage": "5000 IU daily",
+      "reason": "Correct Vitamin D deficiency (25 ng/ml)",
+      "reference": "Standard guidelines for Vitamin D deficiency correction"
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "requests": [
+        {
+          "request_type": "supplementation plan",
+          "recipient": "Carla",
+          "details": "travel-friendly Vitamin D3 supplementation"
+        },
+        {
+          "request_type": "exercise plan",
+          "recipient": "Rachel",
+          "details": "updated plan rationale for strength training"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "exercise_plan_update",
+    "source": "Rachel (PT)",
+    "details": {
+      "date_updated": "2025-08-30",
+      "plan_summary": "Incorporating compound strength exercises (squats, deadlifts, rows, presses) 2-3 times per week, focusing on proper form and progressive overload.  Flexibility built in to accommodate travel.",
+      "rationale": "Compound exercises improve cardiovascular health, increase bone density, and build functional strength."
+    }
+  },
+  {
+    "data_type": "nutrition_plan_update",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "08/30/2025",
+      "update": "Travel-friendly Vitamin D3 supplementation options recommended: liquid supplements or individual softgels."
+    }
+  },
+  {
+    "data_type": "Exercise Plan Update",
+    "source": "Rachel (PT)",
+    "details": {
+      "date": "08/30/2025",
+      "plan_update_notes": "Emphasized quality of form over quantity of reps for compound movements due to time constraints, particularly during travel."
+    }
+  },
+  {
+    "data_type": "Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "Data Analysis",
+      "specific_metrics": [
+        "Blood Pressure impact of strength training",
+        "HRV and sleep trends"
+      ],
+      "timeline": "Next week"
+    }
+  },
+  {
+    "data_type": "Wearable Data Summary",
+    "source": "Whoop & Garmin",
+    "details": {
+      "sleep": {
+        "average_sleep_duration": "6.5 hours",
+        "sleep_consistency": "60%",
+        "sleep_quality": "7/10"
+      },
+      "hrv": {
+        "average_hrv": "45 ms",
+        "hrv_trend": "downward (10%)"
+      },
+      "workout_intensity": {
+        "average_intensity": "75%",
+        "workout_compliance": "80%"
+      }
+    }
+  },
+  {
+    "data_type": "QBR_Summary",
+    "source": "Neel",
+    "details": {
+      "meeting_date": "08/30/2025",
+      "meeting_time": "16:00",
+      "attendees": [
+        "Rohan Patel",
+        "Neel",
+        "Dr. Warren",
+        "Advik",
+        "Carla",
+        "Rachel"
+      ],
+      "key_findings": [
+        "Slight improvement in BP and cholesterol; low Vitamin D identified and addressed.",
+        "Inconsistent engagement due to travel; strategies for better adherence needed.",
+        "Sleep disruption during travel significantly impacting HRV; travel mitigation strategies required."
+      ],
+      "next_steps": [
+        "Continue current plan with improved adherence focus.",
+        "Refine travel-friendly health routines.",
+        "Schedule follow-up QBR in 3 months."
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_summary",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "meeting_date": "2025-08-30",
+      "meeting_time": "22:35",
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "topics_discussed": [
+        "QBR findings",
+        "Q2 strategy",
+        "travel optimization",
+        "adherence improvement"
+      ],
+      "action_items": [
+        "Prepare concise report summarizing key findings and actionable steps for Q2.",
+        "Optimize travel routines to minimize impact on health goals.",
+        "Improve adherence to scheduled appointments and health tracking."
+      ]
+    }
+  },
+  {
+    "data_type": "Medical Plan Update",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-08-30",
+      "patient": "Rohan Patel",
+      "plan_updates": [
+        {
+          "item": "Cholesterol Management",
+          "details": "Dietary adjustments and adherence to the nutrition plan remain crucial."
+        },
+        {
+          "item": "Vitamin D Supplementation",
+          "details": "Continue 5000 IU daily Vitamin D3 supplement. Explore travel-friendly options (liquid or softgels)."
+        },
+        {
+          "item": "Next Steps",
+          "details": "Progress review at next Quarterly Business Review (QBR)."
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "QBR Summary",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "date": "8/31/2025",
+      "report_sent": true,
+      "key_focus_q2": [
+        "Travel optimization",
+        "Adherence improvement"
+      ],
+      "report_contents": [
+        "Summary of Q1 progress",
+        "Actionable steps for Q2",
+        "Key areas for improvement"
+      ]
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data_access",
+      "specific_data": [
+        "raw data supporting travel disruption claims",
+        "quantifiable impact of missed calls on overall progress"
+      ]
+    }
+  },
+  {
+    "data_type": "Performance Analysis",
+    "source": "Whoop & Elyx Engagement Log",
+    "details": {
+      "HRV_impact_travel": {
+        "average_drop": "-15%",
+        "correlation_sleep": "0.85",
+        "correlation_missed_workouts": "0.70",
+        "specific_trips": [
+          {
+            "trip_location": "US",
+            "average_HRV_drop": "-18%",
+            "days_missed": "2"
+          },
+          {
+            "trip_location": "UK",
+            "average_HRV_drop": "-12%",
+            "days_missed": "1"
+          }
+        ]
+      },
+      "missed_call_impact": {
+        "number_of_missed_calls": "3",
+        "total_time_lost": "45 minutes",
+        "estimated_progress_impact": {
+          "sleep_deprivation": "-1 hour",
+          "nutrition_tracking": "-10%",
+          "exercise_adherence": "-5%"
+        }
+      }
+    }
+  },
+  {
+    "data_type": "Meeting Request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_with": "Advik",
+      "date": "2025-09-02",
+      "time": "14:00",
+      "timezone": "GMT+8",
+      "topic": "Review of Whoop data and impact analysis of missed calls"
+    }
+  },
+  {
+    "data_type": "meeting_scheduled",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "meeting_type": "QBR",
+      "participants": [
+        "Rohan Patel",
+        "Neel",
+        "Dr. Warren",
+        "Advik",
+        "Carla",
+        "Rachel"
+      ],
+      "date": "9/3/25",
+      "time": "2:00 PM"
+    }
+  },
+  {
+    "data_type": "meeting_update",
+    "source": "Neel",
+    "details": {
+      "meeting_scheduled": true,
+      "meeting_date": "2025-09-02",
+      "meeting_time": "14:00",
+      "participants": [
+        "Rohan Patel",
+        "Neel",
+        "Dr. Warren",
+        "Advik",
+        "Carla",
+        "Rachel"
+      ],
+      "meeting_agenda": "Quarterly Business Review"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Neel",
+    "details": {
+      "meeting_topic": "Quarterly Business Review",
+      "attendees": [
+        "Rohan Patel",
+        "Neel",
+        "Dr. Warren",
+        "Advik",
+        "Carla",
+        "Rachel"
+      ],
+      "date": "2025-09-02",
+      "time": "14:00"
+    }
+  },
+  {
+    "data_type": "scheduling_request",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "recipient": "Rohan Patel",
+      "topic": "QBR Action Items Review",
+      "requested_time": "Tomorrow morning"
+    }
+  },
+  {
+    "data_type": "Meeting Schedule",
+    "source": "Sarah Tan",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Ruby"
+      ],
+      "date": "2025-09-02",
+      "time": "10:00 AM",
+      "topic": "QBR Action Point Review",
+      "duration": "15 minutes"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_time": "2025-09-02T10:00:00",
+      "attendees": [
+        "Rohan Patel",
+        "Ruby"
+      ],
+      "topic": "QBR Action Point Review"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Sarah Tan",
+        "Ruby"
+      ],
+      "topic": "QBR Action Points Review",
+      "date": "2025-09-02",
+      "time": "10:00 AM",
+      "duration": "10 minutes"
+    }
+  },
+  {
+    "data_type": "Meeting Confirmation",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "meeting_topic": "QBR Action Point Review",
+      "attendees": [
+        "Rohan Patel",
+        "Ruby"
+      ],
+      "scheduled_time": "September 2nd, 10:00 AM",
+      "status": "Confirmed"
+    }
+  },
+  {
+    "data_type": "meeting_confirmation",
+    "source": "Sarah Tan",
+    "details": {
+      "meeting_time": "September 2nd, 10:00 AM",
+      "attendees": [
+        "Rohan Patel",
+        "Ruby"
+      ],
+      "topic": "QBR Action Points Review",
+      "status": "Confirmed"
+    }
+  },
+  {
+    "data_type": "exercise_plan_update",
+    "source": "Rachel (PT)",
+    "details": {
+      "date": "9/2/25",
+      "update_summary": "Emphasis on proper form for squats and deadlifts; prioritize quality over quantity.",
+      "next_review": "9/9/25"
+    }
+  },
+  {
+    "data_type": "Sleep and HRV Metrics",
+    "source": "Whoop",
+    "details": {
+      "date": "2025-09-01",
+      "sleep_duration": "6 hours",
+      "sleep_quality": "Poor",
+      "hrv": "Below average",
+      "recovery": "Low"
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data",
+      "data_requested": "raw HRV data from Whoop, correlated with specific QBR discussion points",
+      "timestamp": "2025-09-01T19:03:00"
+    }
+  },
+  {
+    "data_type": "HRV Data",
+    "source": "Whoop",
+    "details": {
+      "date_range": "August 26th - September 1st",
+      "average_hrv": 72,
+      "lowest_hrv": 65,
+      "highest_hrv": 80,
+      "data_points": [
+        {
+          "timestamp": "2025-08-26T10:00:00Z",
+          "hrv": 75
+        },
+        {
+          "timestamp": "2025-08-26T16:00:00Z",
+          "hrv": 70
+        },
+        {
+          "timestamp": "2025-08-27T12:00:00Z",
+          "hrv": 68
+        },
+        {
+          "timestamp": "2025-08-27T18:00:00Z",
+          "hrv": 78
+        },
+        {
+          "timestamp": "2025-08-28T10:00:00Z",
+          "hrv": 72
+        },
+        {
+          "timestamp": "2025-08-28T16:00:00Z",
+          "hrv": 65
+        },
+        {
+          "timestamp": "2025-08-29T12:00:00Z",
+          "hrv": 73
+        },
+        {
+          "timestamp": "2025-08-29T18:00:00Z",
+          "hrv": 76
+        },
+        {
+          "timestamp": "2025-08-30T10:00:00Z",
+          "hrv": 78
+        },
+        {
+          "timestamp": "2025-08-30T16:00:00Z",
+          "hrv": 70
+        },
+        {
+          "timestamp": "2025-08-31T12:00:00Z",
+          "hrv": 71
+        },
+        {
+          "timestamp": "2025-08-31T18:00:00Z",
+          "hrv": 80
+        },
+        {
+          "timestamp": "2025-09-01T10:00:00Z",
+          "hrv": 75
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "HRV & Travel Correlation",
+    "source": "Whoop & Calendar",
+    "details": {
+      "week_of": "September 1st - September 7th",
+      "travel_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "average_hrv": "60 ms (below baseline of 75 ms)",
+      "observed_correlation": "Significant drop in HRV during travel days"
+    }
+  },
+  {
+    "data_type": "Inquiry",
+    "source": "Rohan Patel",
+    "details": {
+      "topic": "HRV Data and Travel Optimization",
+      "request": "HRV data correlation with travel and mitigation strategies for upcoming Jakarta trip"
+    }
+  },
+  {
+    "data_type": "HRV Analysis",
+    "source": "Whoop",
+    "details": {
+      "correlation": "Negative correlation observed between travel days and HRV",
+      "specifics": "HRV dropped by an average of 15% on travel days compared to non-travel days.  Largest drop coincided with late-night meetings and disrupted sleep schedules.",
+      "recommendations": [
+        "Maintain consistent sleep schedule as much as possible, even while traveling.",
+        "Reduce screen time at least 1 hour before bed.",
+        "Consider a sleep supplement (e.g., melatonin) for jet lag mitigation.",
+        "Incorporate short relaxation techniques (meditation, deep breathing) during travel."
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Dr. Warren",
+    "details": {
+      "meeting_topic": "Jakarta Trip Preparation: Sleep Optimization and Stress Reduction",
+      "attendees": [
+        "Rohan Patel",
+        "Dr. Warren"
+      ],
+      "proposed_times": [
+        "2 PM today",
+        "10 AM tomorrow"
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "requested_by": "Rohan Patel",
+      "participants": [
+        "Rohan Patel",
+        "Dr. Warren"
+      ],
+      "topic": "Evidence-based rationale for sleep optimization and stress reduction techniques for Jakarta trip",
+      "requested_time": "Afternoon of 9/3/25"
+    }
+  },
+  {
+    "data_type": "appointment",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-09-03",
+      "time": "14:00",
+      "duration": "15 minutes",
+      "attendees": [
+        "Rohan Patel",
+        "Dr. Warren"
+      ],
+      "topic": "Jakarta Trip Preparation: Sleep Optimization and Stress Reduction"
+    }
+  },
+  {
+    "data_type": "Meeting Schedule",
+    "source": "Dr. Warren",
+    "details": {
+      "meeting_topic": "Jakarta Trip Preparation: Sleep Optimization and Stress Reduction",
+      "attendees": [
+        "Rohan Patel",
+        "Dr. Warren"
+      ],
+      "scheduled_time": "2:00 PM, September 3, 2025"
+    }
+  },
+  {
+    "data_type": "Meeting Request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_topic": "Jakarta Trip Preparation",
+      "participants": [
+        "Rohan Patel",
+        "Dr. Warren"
+      ],
+      "scheduled_time": "2:00 PM, September 3, 2025"
+    }
+  },
+  {
+    "data_type": "HRV Analysis",
+    "source": "Whoop",
+    "details": {
+      "average_hrv_pre_travel": 65,
+      "average_hrv_during_travel": 50,
+      "average_hrv_post_travel": 70,
+      "travel_dates": [
+        "8/26/25",
+        "9/2/25"
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Dr. Warren",
+    "details": {
+      "meeting_topic": "Jakarta Trip Preparation",
+      "attendees": [
+        "Rohan Patel",
+        "Dr. Warren"
+      ],
+      "time": "2:00 PM, September 3, 2025"
+    }
+  },
+  {
+    "data_type": "Meeting Scheduled",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "meeting_topic": "QBR Action Items & Travel Optimization",
+      "participants": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "scheduled_time": "To be determined",
+      "agenda_items": [
+        "Review QBR action points",
+        "Optimize health routines during travel",
+        "Address potential friction points"
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_topic": "QBR Review and Strategy",
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "requested_data": "Raw QBR data",
+      "requested_time": "Before meeting"
+    }
+  },
+  {
+    "data_type": "HRV and QBR Correlation",
+    "source": "Whoop & Elyx Calendar",
+    "details": {
+      "QBR_Meeting_Times": [
+        "2025-08-27T14:00:00",
+        "2025-09-03T14:00:00"
+      ],
+      "Post_Meeting_HRV_Dips": [
+        {
+          "time": "2025-08-27T16:00:00",
+          "hrv": 35
+        },
+        {
+          "time": "2025-09-03T16:30:00",
+          "hrv": 42
+        }
+      ],
+      "Average_HRV_Before_Meetings": 50,
+      "Average_HRV_After_Meetings": 38.5
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Neel",
+    "details": {
+      "meeting_topic": "QBR Action Items & Resilience Strategies",
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "date": "2025-09-04",
+      "time": "10:00 AM"
+    }
+  },
+  {
+    "data_type": "Exercise Plan Update",
+    "source": "Rachel (PT)",
+    "details": {
+      "date": "2025-09-03",
+      "time": "16:47",
+      "notes": "Advised Rohan to focus on proper form during workouts to prevent injuries and maximize effectiveness.  Next week's session will include a plan update."
+    }
+  },
+  {
+    "data_type": "Data Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "Quantified Analysis",
+      "metrics": [
+        "Blood Pressure (BP)",
+        "Heart Rate Variability (HRV)"
+      ],
+      "context": "Impact of missed mobility sessions",
+      "due_date": "September 4th, 2025, 10 AM"
+    }
+  },
+  {
+    "data_type": "Missed Mobility Session Impact",
+    "source": "Whoop & Self-Reported BP",
+    "details": {
+      "missed_sessions": 3,
+      "average_HRV_drop": "-15 bpm",
+      "average_systolic_BP_increase": "+10 mmHg",
+      "average_diastolic_BP_increase": "+5 mmHg",
+      "notes": "Data reflects average changes in the 24 hours following missed sessions.  Individual variations exist."
+    }
+  },
+  {
+    "data_type": "Missed Mobility Session Impact",
+    "source": "Whoop & BP Tracker",
+    "details": {
+      "missed_sessions": 3,
+      "average_BP_increase": "5 mmHg systolic, 3 mmHg diastolic",
+      "average_HRV_reduction": "10 ms",
+      "correlation_analysis": "Strong correlation (R=0.8) between missed sessions and increased BP/reduced HRV"
+    }
+  },
+  {
+    "data_type": "Data Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_time": "2025-09-04T08:15:00",
+      "request_details": "Raw data points for missed mobility sessions, including BP and HRV data.  Time-sensitive request.",
+      "call_schedule": "2025-09-04T09:00:00"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Neel",
+    "details": {
+      "meeting_id": "QBR_followup_Rohan",
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "time": "9:00 AM",
+      "date": "9/4/25",
+      "duration": "10 minutes",
+      "agenda": "Review action items from QBR and strategy for building resilience"
+    }
+  },
+  {
+    "data_type": "Medical Assessment",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-09-03",
+      "patient": "Rohan Patel",
+      "assessment": {
+        "cholesterol": "Slightly elevated (210 mg/dL)",
+        "vitamin_d": "Low (25 ng/ml)"
+      }
+    }
+  },
+  {
+    "data_type": "HRV Analysis",
+    "source": "Whoop",
+    "details": {
+      "date_range": "September 1st - September 3rd",
+      "key_findings": "Correlation observed between high-intensity QBR meetings and decreased HRV.",
+      "recommendations": "Explore stress-management techniques (e.g., mindfulness, breathing exercises) during and after QBR meetings."
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data",
+      "data_requested": "raw HRV data correlated with specific QBR meeting timestamps"
+    }
+  },
+  {
+    "data_type": "Medical Plan Adjustments",
+    "source": "Dr. Warren",
+    "details": {
+      "cholesterol": "Slightly elevated (210 mg/dL)",
+      "vitamin_d": "Low (25 ng/ml)",
+      "plan_adjustments": [
+        "Dietary adjustments to lower cholesterol",
+        "5000 IU daily Vitamin D3 supplement"
+      ]
+    }
+  },
+  {
+    "data_type": "HRV_analysis",
+    "source": "Whoop",
+    "details": {
+      "date_range": "September 1st - September 3rd",
+      "average_HRV": 45,
+      "lowest_HRV_recorded": 38,
+      "correlation_with_QBRs": "Significant drop in HRV observed post-QBR meetings.",
+      "additional_notes": "Further analysis needed to isolate specific contributing factors beyond QBRs."
+    }
+  },
+  {
+    "data_type": "HRV and Alcohol Consumption Correlation",
+    "source": "Whoop Data & Self-Reported Alcohol Intake",
+    "details": {
+      "correlation_coefficient": -0.7,
+      "p_value": 0.01,
+      "average_hrv_post_qbr_with_alcohol": 35,
+      "average_hrv_post_qbr_without_alcohol": 50,
+      "number_of_observations": 10
+    }
+  },
+  {
+    "data_type": "travel_plan",
+    "source": "Rohan Patel",
+    "details": {
+      "destination": "UK",
+      "departure_date": "September 4th, 2025",
+      "return_date": "September 8th, 2025"
+    }
+  },
+  {
+    "data_type": "Sleep and HRV Data",
+    "source": "Whoop",
+    "details": {
+      "date": "2025-09-04",
+      "sleep_duration": "6 hours 30 minutes",
+      "sleep_quality": "65%",
+      "resting_hr": "58 bpm",
+      "hrv": "35 ms",
+      "recovery": "60%"
+    }
+  },
+  {
+    "data_type": "question",
+    "source": "Rohan Patel",
+    "details": {
+      "timestamp": "9/4/25, 1:17 AM",
+      "topic": "Stress Reduction Techniques",
+      "context": "Pre-travel inquiry regarding HRV dips after QBRs."
+    }
+  },
+  {
+    "data_type": "Exercise Plan Adjustment",
+    "source": "Rachel (PT)",
+    "details": {
+      "week": 17,
+      "adjustment_type": "Travel Modification",
+      "new_plan": "Focus on bodyweight exercises and short, high-intensity sessions. Prioritize consistency over intensity during travel."
+    }
+  },
+  {
+    "data_type": "nutrition_plan_update",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "2025-09-04",
+      "update_summary": "Focus on nutrient-dense foods during Jakarta trip, prioritizing protein and fiber for satiety and sustained energy.",
+      "specific_recommendations": [
+        "Pack protein bars or shakes for quick meals",
+        "Choose restaurants with healthy options (grilled fish, salads with lean protein)",
+        "Look for local markets with fresh fruits & vegetables",
+        "Limit processed foods, sugary drinks, and excessive sodium intake"
+      ]
+    }
+  },
+  {
+    "data_type": "Whoop Data",
+    "source": "Whoop Strap",
+    "details": {
+      "date": "2025-09-04",
+      "HRV": "Below average",
+      "sleep": "Fragmented",
+      "recovery": "Low",
+      "notes": "Observed HRV dip before Jakarta trip, suggesting stress or sleep disruption."
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data_support",
+      "topics": [
+        "travel-friendly workout options",
+        "nutrient-dense food choices for Jakarta",
+        "strategies for optimizing travel routine for better HRV recovery"
+      ]
+    }
+  },
+  {
+    "data_type": "HRV Analysis",
+    "source": "Whoop",
+    "details": {
+      "pre_trip_hrv": 45,
+      "during_trip_hrv": 38,
+      "post_trip_hrv": 42,
+      "average_hrv": 41.6,
+      "notes": "Significant dip in HRV observed during Jakarta trip, likely due to travel-related stress and sleep disruption.  Recovery is slower post-trip.  Suggest focusing on consistent sleep, stress reduction, and potentially sleep supplements."
+    }
+  },
+  {
+    "data_type": "Medical Recommendations",
+    "source": "Dr. Warren",
+    "details": {
+      "recommendations": [
+        "Address slightly elevated cholesterol (210 mg/dL)",
+        "Address low Vitamin D levels (25 ng/ml)",
+        "Prioritize consistent sleep and hydration during travel"
+      ],
+      "timestamp": "2025-09-04T03:57:00"
+    }
+  },
+  {
+    "data_type": "Exercise Plan Adjustment",
+    "source": "Rachel (PT)",
+    "details": {
+      "date": "2025-09-04",
+      "adjustment_type": "Travel-friendly modifications",
+      "exercises_added": [
+        "Squats",
+        "Push-ups",
+        "Lunges"
+      ],
+      "focus": "Compound movements, proper form",
+      "next_update": "2025-09-11"
+    }
+  },
+  {
+    "data_type": "nutrition_plan_update",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "2025-09-04",
+      "update_description": "Provided restaurant and snack recommendations for Rohan's upcoming trip to Jakarta, focusing on maintaining his heart health and energy levels while travelling.",
+      "specific_recommendations": [
+        "Prioritize lean protein sources at restaurants.",
+        "Choose whole grains over refined carbohydrates.",
+        "Opt for steamed or grilled options over fried foods.",
+        "Select fruits and vegetables as sides and snacks.",
+        "Pack portable, healthy snacks like nuts, seeds, and dried fruit."
+      ]
+    }
+  },
+  {
+    "data_type": "Medical Note",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-09-04",
+      "time": "08:15",
+      "patient": "Rohan Patel",
+      "notes": "Bloodwork reveals slightly elevated cholesterol (210 mg/dL) and low Vitamin D (25 ng/ml).  Personalized plan to be discussed and detailed report to follow."
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "medical information",
+      "specific_requests": [
+        "Detailed report on elevated cholesterol and low Vitamin D levels.",
+        "Evidence supporting recommended Vitamin D3 dosage."
+      ]
+    }
+  },
+  {
+    "data_type": "Wearable Data Analysis",
+    "source": "Whoop",
+    "details": {
+      "date_range": "September 1st - September 4th",
+      "key_findings": [
+        "Observed correlation between decreased HRV and late nights/sleep deprivation.",
+        "Average HRV during weekdays lower than weekends.",
+        "Recommended strategies: Consistent sleep schedule, reduced screen time before bed, potential sleep supplements (to discuss with Dr. Warren)."
+      ],
+      "raw_data": "See attached detailed report."
+    }
+  },
+  {
+    "data_type": "Medical Report",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "date": "09/04/2025",
+      "test_results": {
+        "cholesterol": "210 mg/dL",
+        "vitamin_d": "25 ng/ml"
+      },
+      "recommendations": {
+        "vitamin_d_supplement": "5000 IU Vitamin D3 daily",
+        "cholesterol_management": "Dietary adjustments and further discussion needed"
+      }
+    }
+  },
+  {
+    "data_type": "query",
+    "source": "Rohan Patel",
+    "details": {
+      "query_timestamp": "2025-09-04T11:35:00",
+      "query_topics": [
+        "Vitamin D side effects",
+        "Cholesterol management dietary recommendations",
+        "Impact of inconsistent food logging"
+      ]
+    }
+  },
+  {
+    "data_type": "Nutrition Plan Adjustment",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "2025-09-04",
+      "cholesterol_recommendations": "Reduce saturated fats and sodium intake",
+      "food_log_recommendations": "Aim for daily entries for improved accuracy",
+      "vitamin_d_dosage": "5000 IU daily",
+      "vitamin_d_safety": "Generally safe, with monitoring of blood levels recommended"
+    }
+  },
+  {
+    "data_type": "Medical Recommendations",
+    "source": "Dr. Warren",
+    "details": {
+      "Vitamin_D_Dosage": "5000 IU daily",
+      "Cholesterol_Management": "Dietary changes detailed in attached document",
+      "Inconsistent_Logging_Impact": "Reduced accuracy in plan adjustments"
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "topic": "Cholesterol management and Vitamin D dosage details",
+      "requested_data": [
+        "Raw data on 5000 IU Vitamin D3 dosage recommendation",
+        "Data on the impact of inconsistent food logging on cholesterol levels"
+      ],
+      "participants": [
+        "Rohan Patel",
+        "Dr. Warren",
+        "Carla"
+      ]
+    }
+  },
+  {
+    "data_type": "Data Request Fulfillment",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "request": "Raw data on Vitamin D dosage recommendation and impact of inconsistent food logging.",
+      "response": {
+        "VitaminD": {
+          "dosage": "5000 IU",
+          "rationale": "Based on your low Vitamin D level (25 ng/ml) and current research, 5000 IU is a safe and effective dose to bring you to optimal levels within a reasonable time frame.  This is within the safe upper limit for most adults and reduces risks associated with deficiency.",
+          "data_source": "Blood test results and medical literature"
+        },
+        "InconsistentLogging": {
+          "impact": "Inconsistent food logging introduces inaccuracies into your nutrient intake assessment.  This can lead to miscalculations in your dietary recommendations, potentially compromising the effectiveness of strategies aimed at improving cholesterol levels.  Daily logging allows for more accurate assessments and personalized adjustments.",
+          "data_source": "Whoop,  Nutrition logging data, and previous medical advice"
+        }
+      }
+    }
+  },
+  {
+    "data_type": "Medical Plan Adjustment",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "date": "09/04/2025",
+      "adjustments": [
+        {
+          "item": "Vitamin D3 dosage",
+          "details": "5000 IU daily is appropriate given low Vitamin D levels (25 ng/ml).",
+          "rationale": "Within safe limits for most adults, requires monitoring."
+        },
+        {
+          "item": "Cholesterol management",
+          "details": "Inconsistent food logging significantly impacts strategy.",
+          "rationale": "Requires improved data accuracy for effective management."
+        }
+      ],
+      "next_steps": "Schedule a call tomorrow to discuss cholesterol management dietary changes in detail."
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Neel",
+    "details": {
+      "recipient": "Rohan Patel",
+      "subject": "Recovery Plan Optimization",
+      "proposed_times": [
+        "Tomorrow, 10 AM",
+        "Tomorrow, 2 PM",
+        "Tomorrow, 4 PM"
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_time": "2025-09-05T15:00:00",
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "topic": "Recovery plan optimization for US trip"
+    }
+  },
+  {
+    "data_type": "HRV Data Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_time": "2025-09-04T15:25:00",
+      "data_requested": "Raw HRV data from Whoop, summary of key trends during US trip"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "meeting_with": "Rohan Patel",
+      "meeting_time": "2025-09-05T15:00:00",
+      "meeting_with_2": "Sarah (PA)",
+      "meeting_time_2": "2025-09-05T10:00:00",
+      "topic": "QBR action points and HRV data"
+    }
+  },
+  {
+    "data_type": "HRV Data",
+    "source": "Whoop",
+    "details": {
+      "date_range": "September 1st - September 4th, 2025",
+      "average_hrv": 65,
+      "lowest_hrv_recorded": 50,
+      "highest_hrv_recorded": 80,
+      "sleep_duration": {
+        "average": 7.5,
+        "min": 6.2,
+        "max": 8.8
+      },
+      "recovery": {
+        "average": 60,
+        "min": 45,
+        "max": 75
+      }
+    }
+  },
+  {
+    "data_type": "HRV Data Request",
+    "source": "Rohan Patel",
+    "details": {
+      "timestamp": "9/5/25, 10:15 AM",
+      "request_details": "Requested raw HRV data from Advik for analysis before a meeting with Neel to discuss strategies for mitigating consistent pre-trip HRV dips."
+    }
+  },
+  {
+    "data_type": "Meeting Scheduled",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "meeting_time": "2025-09-05T15:00:00",
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "topic": "Building Sustainable Strategies for Pre-Trip HRV Improvement",
+      "agenda_items": [
+        "Review Advik's HRV data",
+        "Develop a plan for US trip and future travel",
+        "Connect to Q2 goals"
+      ]
+    }
+  },
+  {
+    "data_type": "Exercise Plan Update",
+    "source": "Rachel (PT)",
+    "details": {
+      "week_number": 19,
+      "date": "9/5/25",
+      "plan_update": "Emphasis on proper form during workouts, prioritizing compound movements for efficiency during travel.  Next week's plan adjustment will follow."
+    }
+  },
+  {
+    "data_type": "Nutrition Plan Adjustment",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "adjustment_reason": "Upcoming US trip",
+      "focus": "Nutrient-dense, travel-friendly meals; prioritizing protein and complex carbohydrates",
+      "next_steps": "Review food log upon return"
+    }
+  },
+  {
+    "data_type": "Schedule Update",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "meeting": {
+        "attendees": [
+          "Rohan Patel",
+          "Neel (Concierge Lead)"
+        ],
+        "date": "9/8/25",
+        "time": "To be determined",
+        "topic": "Pre-trip HRV dip & plan adjustment"
+      },
+      "reminder": {
+        "recipient": "Rohan Patel",
+        "task": "Complete daily food log",
+        "frequency": "Daily",
+        "start_date": "9/5/25",
+        "end_date": "9/7/25"
+      },
+      "travel": {
+        "destination": "US",
+        "start_date": "9/10/25",
+        "end_date": "9/14/25"
+      }
+    }
+  },
+  {
+    "data_type": "lab_results",
+    "source": "Comprehensive Diagnostic Panel",
+    "details": {
+      "cholesterol": "210 mg/dL",
+      "vitamin_d": "25 ng/ml"
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data",
+      "items": [
+        "Vitamin D3 dosage justification",
+        "Dietary changes rationale for cholesterol management"
+      ]
+    }
+  },
+  {
+    "data_type": "nutrition_recommendation",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "recommendation": "5000 IU Vitamin D3 daily",
+      "reasoning": "To address low Vitamin D levels (25 ng/ml)",
+      "supporting_data": "[link to relevant studies]",
+      "cholesterol_management": "Reduce saturated fats and sodium intake"
+    }
+  },
+  {
+    "data_type": "HRV Analysis",
+    "source": "Whoop",
+    "details": {
+      "pre_trip_hrv_dip": true,
+      "average_hrv_before_trip": 45,
+      "average_hrv_during_trip": 38,
+      "potential_causes": [
+        "stress",
+        "sleep disruption",
+        "travel fatigue"
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Advik"
+      ],
+      "topic": "HRV dip mitigation strategies",
+      "date": "2025-09-06",
+      "time": "14:00"
+    }
+  },
+  {
+    "data_type": "Medical Plan Adjustment",
+    "source": "Dr. Warren",
+    "details": {
+      "cholesterol": {
+        "level": "210 mg/dL",
+        "recommendation": "Dietary adjustments focusing on reducing saturated fats and sodium intake."
+      },
+      "vitaminD": {
+        "level": "25 ng/ml",
+        "recommendation": "5000 IU Vitamin D3 supplement daily."
+      }
+    }
+  },
+  {
+    "data_type": "Medical Plan",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "date": "09/05/2025",
+      "plan_items": [
+        {
+          "item": "Vitamin D3 Supplementation",
+          "dosage": "5000 IU daily",
+          "rationale": "To address Vitamin D deficiency (25 ng/ml).  Research supports this dosage for optimal repletion in adults with deficiency.",
+          "supporting_data": "[Link to relevant research articles]"
+        },
+        {
+          "item": "Dietary Adjustments",
+          "details": "Reduce saturated fats and sodium intake to manage cholesterol (210 mg/dL).  Focus on lean proteins, fruits, vegetables, and whole grains.",
+          "supporting_data": "[Link to dietary guidelines and cholesterol management resources]"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "Request for Data",
+    "source": "Rohan Patel",
+    "details": {
+      "request": "Raw data supporting Vitamin D3 dosage and cholesterol management recommendations"
+    }
+  },
+  {
+    "data_type": "HRV Data Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_timestamp": "2025-09-05T18:38:00",
+      "data_requested": [
+        "Raw HRV data",
+        "Supporting documentation for travel optimization strategies"
+      ]
+    }
+  },
+  {
+    "data_type": "HRV and Travel Optimization Data",
+    "source": "Whoop & Elyx Internal Analysis",
+    "details": {
+      "hrv_data": [
+        {
+          "date": "2025-09-02",
+          "hrv": 45,
+          "notes": "Pre-trip dip"
+        },
+        {
+          "date": "2025-09-03",
+          "hrv": 50,
+          "notes": "Travel day 1"
+        },
+        {
+          "date": "2025-09-04",
+          "hrv": 48,
+          "notes": "Travel day 2"
+        },
+        {
+          "date": "2025-09-05",
+          "hrv": 52,
+          "notes": "Recovery"
+        }
+      ],
+      "mitigation_strategies": [
+        "Consistent sleep schedule (7-8 hours)",
+        "Reduced screen time before bed",
+        "Melatonin supplement (3mg) 30 min before bed"
+      ],
+      "supporting_evidence": "Attached as separate document"
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Ruby",
+    "details": {
+      "recipient": "Sarah (Rohan's PA)",
+      "topic": "Diagnostic panel preparation",
+      "time_preference": "Today"
+    }
+  },
+  {
+    "data_type": "Member Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "Data Request",
+      "topic": "Diagnostic Panel Prep",
+      "specific_data": "Hydration requirements justification"
+    }
+  },
+  {
+    "data_type": "meeting_confirmation",
+    "source": "Sarah Tan",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Ruby"
+      ],
+      "topic": "Diagnostic Panel Prep",
+      "scheduled_time": "11:00 AM, September 6th, 2025"
+    }
+  },
+  {
+    "data_type": "meeting_confirmation",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "meeting_time": "11:00 AM, September 6th, 2025",
+      "attendees": [
+        "Rohan Patel",
+        "Ruby (Concierge)"
+      ],
+      "topic": "Diagnostic panel preparation",
+      "additional_data_sent": true
+    }
+  },
+  {
+    "data_type": "hydration_query",
+    "source": "Rohan Patel",
+    "details": {
+      "timestamp": "2025-09-06T11:29:00",
+      "query": "Requesting specific data on the impact of suboptimal hydration on blood panel results."
+    }
+  },
+  {
+    "data_type": "hydration_impact_data",
+    "source": "Elyx Internal Research",
+    "details": {
+      "component_1": {
+        "name": "Hemoglobin",
+        "impact": "Dehydration can falsely elevate hemoglobin levels."
+      },
+      "component_2": {
+        "name": "Creatinine",
+        "impact": "Dehydration can increase creatinine, potentially masking kidney issues."
+      },
+      "component_3": {
+        "name": "Sodium",
+        "impact": "Dehydration can artificially increase sodium levels."
+      },
+      "recommendation": "Maintain optimal hydration for accurate results.  Consider carrying a reusable water bottle and setting hydration reminders during your travel."
+    }
+  },
+  {
+    "data_type": "hydration_guidelines",
+    "source": "Elyx Medical Team",
+    "details": {
+      "impact_on_blood_panel": {
+        "hemoconcentration": "Increased concentration of blood components, potentially leading to falsely elevated levels of certain analytes (e.g., creatinine, glucose, proteins).",
+        "sodium_levels": "Dehydration can affect sodium levels, potentially causing inaccurate results."
+      },
+      "recommendations": {
+        "fluid_intake": "Maintain adequate hydration by consuming at least 2-3 liters of fluids daily, especially before blood tests.",
+        "avoid_caffeine_alcohol": "Limit caffeine and alcohol intake, which can act as diuretics and lead to dehydration.",
+        "travel_strategies": "Pack a reusable water bottle and fill it throughout the day. Set reminders to drink water regularly."
+      }
+    }
+  },
+  {
+    "data_type": "hydration_concerns",
+    "source": "Rohan Patel",
+    "details": {
+      "date": "2025-09-06",
+      "time": "13:45",
+      "location": "Singapore",
+      "concern": "Maintaining optimal hydration during travel to South Korea (Monday-Thursday).",
+      "requested_information": "Practical, evidence-based strategies for maintaining hydration during travel."
+    }
+  },
+  {
+    "data_type": "hydration_plan_update",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "date_sent": "2025-09-06",
+      "time_sent": "14:05",
+      "plan_updates": [
+        "Increased emphasis on pre-hydration strategies",
+        "Specific hydration goal reminders throughout the day",
+        "Recommended travel-friendly hydration tools (e.g., hydration packs, electrolyte tablets)"
+      ]
+    }
+  },
+  {
+    "data_type": "schedule_update",
+    "source": "Ruby",
+    "details": {
+      "member": "Rohan Patel",
+      "trip_destination": "South Korea",
+      "trip_dates": "September 8th-11th",
+      "plan_updated": "Hydration plan adjusted for travel."
+    }
+  },
+  {
+    "data_type": "appointment",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-09-08",
+      "time": "07:00 AM",
+      "type": "blood draw",
+      "location": "LabCorp (TBC)"
+    }
+  },
+  {
+    "data_type": "appointment_confirmation",
+    "source": "Rohan Patel",
+    "details": {
+      "appointment_type": "blood_draw",
+      "date": "2025-09-08",
+      "time": "7:00 AM"
+    }
+  },
+  {
+    "data_type": "appointment_update",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "appointment_type": "blood draw",
+      "scheduled_time": "2025-09-08T07:00:00",
+      "notes": "12-hour fast required. Prioritize restful sleep."
+    }
+  },
+  {
+    "data_type": "self-reported health metrics",
+    "source": "Rohan Patel",
+    "details": {
+      "timestamp": "2025-09-07T12:15:00",
+      "fatigue_level": "minor",
+      "recovery_walk_completed": false,
+      "comments": "Missed recovery walk due to fatigue after blood draw."
+    }
+  },
+  {
+    "data_type": "Post-Diagnostic Recovery",
+    "source": "Self-reported and Clinical Observation",
+    "details": {
+      "date": "2025-09-07",
+      "time": "13:45",
+      "report": "Patient reported mild fatigue post-blood draw.  Missed planned light recovery walk.  Clinical recommendation: prioritize rest for 24-48 hours for full recovery.",
+      "recovery_expectation": "24-48 hours"
+    }
+  },
+  {
+    "data_type": "Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "Information & Scheduling",
+      "items": [
+        "Expected recovery time post-blood draw",
+        "Monday morning check-in appointment"
+      ]
+    }
+  },
+  {
+    "data_type": "Medical Note",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "date": "2025-09-07",
+      "time": "14:48",
+      "note": "Post-blood draw fatigue reported.  Instructed patient to prioritize rest. Full recovery expected within 24-48 hours.  Monday morning check-in scheduled."
+    }
+  },
+  {
+    "data_type": "self-reported health metrics",
+    "source": "Rohan Patel",
+    "details": {
+      "date": "2025-09-07",
+      "time": "16:15",
+      "fatigue_level": "mild",
+      "missed_activity": "recovery walk",
+      "planned_activity_rest": "prioritized rest"
+    }
+  },
+  {
+    "data_type": "Medical Advice",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-09-07",
+      "time": "16:30",
+      "patient": "Rohan Patel",
+      "advice": "Minor post-blood draw fatigue is normal; prioritize rest and hydration.  Full recovery expected within 24-48 hours.  Minimal impact on blood panel results expected."
+    }
+  },
+  {
+    "data_type": "appointment",
+    "source": "Rohan Patel",
+    "details": {
+      "date": "2025-09-08",
+      "time": "09:00",
+      "type": "Check-in",
+      "attendee": "Dr. Warren"
+    }
+  },
+  {
+    "data_type": "Lab Results Summary",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "date": "9/7/25",
+      "results": {
+        "ApoB": "Improved",
+        "Lp(a)": "Improved",
+        "Homocysteine": "Elevated",
+        "Vitamin D": "Within normal range"
+      }
+    }
+  },
+  {
+    "data_type": "Whoop Data Analysis",
+    "source": "Whoop",
+    "details": {
+      "period": "Week 22",
+      "key_findings": [
+        "Consistent HRV dips observed before and during UK travel.",
+        "Correlation between lower HRV and lower protein intake during travel.",
+        "Recommendations: Prioritize consistent sleep, reduce screen time before sleep, potentially explore sleep supplements."
+      ]
+    }
+  },
+  {
+    "data_type": "Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "Data Request",
+      "data_requested": [
+        "Lipid markers (raw data)",
+        "Homocysteine levels (raw data)",
+        "Recommendations for addressing elevated homocysteine"
+      ]
+    }
+  },
+  {
+    "data_type": "lab_results",
+    "source": "Elyx Diagnostics",
+    "details": {
+      "patient_id": "RohanPatel",
+      "date": "2025-09-08",
+      "tests": [
+        {
+          "test_name": "ApoB",
+          "value": "80 mg/dL",
+          "units": "mg/dL",
+          "reference_range": "70-100 mg/dL"
+        },
+        {
+          "test_name": "Lp(a)",
+          "value": "20 mg/dL",
+          "units": "mg/dL",
+          "reference_range": "10-30 mg/dL"
+        },
+        {
+          "test_name": "Homocysteine",
+          "value": "15 \u00b5mol/L",
+          "units": "\u00b5mol/L",
+          "reference_range": "5-12 \u00b5mol/L"
+        },
+        {
+          "test_name": "Vitamin D",
+          "value": "35 ng/ml",
+          "units": "ng/ml",
+          "reference_range": "30-100 ng/ml"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "Whoop HRV and Protein Intake Data",
+    "source": "Whoop Wearable",
+    "details": {
+      "travel_dates": [
+        "2025-09-10",
+        "2025-09-14"
+      ],
+      "hrv_avg": [
+        70,
+        65,
+        58,
+        62,
+        75
+      ],
+      "protein_intake_grams": [
+        80,
+        70,
+        55,
+        60,
+        90
+      ],
+      "notes": "Lower HRV correlated with lower protein intake during travel days.  Suggests potential for improvement through pre-planned meals and travel-friendly protein supplements."
+    }
+  },
+  {
+    "data_type": "Lab Results",
+    "source": "Comprehensive Diagnostic Panel - Week 23",
+    "details": {
+      "ApoB": "105 mg/dL (Improved from 118 mg/dL)",
+      "Lp(a)": "25 mg/dL (Improved from 32 mg/dL)",
+      "Homocysteine": "15 \u00b5mol/L (Slightly elevated)",
+      "Vitamin D": "45 ng/mL (Improved from 25 ng/mL)",
+      "Blood Pressure (systolic/diastolic)": "125/80 mmHg (Stable)"
+    }
+  },
+  {
+    "data_type": "Medical Recommendations",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "date": "2025-09-07",
+      "recommendations": [
+        "Increase intake of B vitamins (B6, B9, B12) through diet and/or supplementation.",
+        "Reduce inflammation through a diet rich in anti-inflammatory foods (fruits, vegetables, omega-3 fatty acids).",
+        "Manage stress levels through relaxation techniques (e.g., yoga, meditation).",
+        "Maintain regular exercise routine.",
+        "Monitor homocysteine levels through regular blood tests."
+      ],
+      "supporting_evidence": [
+        "Link to relevant research articles on homocysteine and B vitamins.",
+        "Link to relevant research articles on homocysteine and inflammation."
+      ]
+    }
+  },
+  {
+    "data_type": "Meeting Note",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_date": "September 8th, 2025",
+      "meeting_time": "To be scheduled",
+      "agenda_items": [
+        "Review of provided data (bloodwork, Whoop data, nutrition recommendations)",
+        "Discussion of strategies to maintain optimal protein intake during UK trip",
+        "Analysis of correlation between HRV dips and travel-related stress"
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_notes",
+    "source": "Advik",
+    "details": {
+      "meeting_scheduled": true,
+      "date": "2025-09-08",
+      "time": "10:00 AM",
+      "agenda": [
+        "Review Whoop HRV data and correlation with travel/stress",
+        "Discuss mitigation strategies for travel-related HRV dips",
+        "Present data-driven strategies for protein optimization during travel"
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_reminder",
+    "source": "Neel",
+    "details": {
+      "meeting_type": "QBR",
+      "date": "2025-09-09",
+      "time": "10:00 AM",
+      "attendees": [
+        "Rohan Patel",
+        "Neel",
+        "Dr. Warren",
+        "Advik",
+        "Carla",
+        "Rachel"
+      ],
+      "agenda": "Review of 6-month progress, re-evaluation of goals, and planning for the next phase.",
+      "documents_shared": [
+        "6-month data summary"
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_topic": "QBR data clarification",
+      "requested_summary_type": "concise executive summary",
+      "specific_data_requests": [
+        "key trends",
+        "actionable insights for Q2",
+        "quantified impact of travel on HRV"
+      ]
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data_analysis",
+      "metrics": [
+        "BP",
+        "Cholesterol"
+      ],
+      "intervention": [
+        "Dietary changes",
+        "Exercise plan"
+      ],
+      "timeframe": "6 months",
+      "format": "quantified ROI"
+    }
+  },
+  {
+    "data_type": "nutrition_plan_impact",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "blood_pressure_change": "-8/-5 mmHg (systolic/diastolic)",
+      "cholesterol_reduction": "-15 mg/dL",
+      "time_period": "6 weeks",
+      "notes": "These are average reductions; individual results may vary.  Full data report attached."
+    }
+  },
+  {
+    "data_type": "meeting_summary",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "meeting_topic": "QBR Preparation",
+      "participants": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "timestamp": "2025-09-09T12:58:00",
+      "key_discussion_points": [
+        "Review of ROI data provided by Carla",
+        "Focus on high-level strategic view during QBR",
+        "Data-driven decision making for Q2"
+      ]
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data_access",
+      "data_requested": [
+        "raw_data_roi_calculations",
+        "piano_practice_correlation_stress_hrv"
+      ]
+    }
+  },
+  {
+    "data_type": "Exercise Plan Adjustment",
+    "source": "Rachel (PT)",
+    "details": {
+      "date": "09/09/2025",
+      "adjustment": "Reduce reps to prioritize perfect form, adjust intensity next week."
+    }
+  },
+  {
+    "data_type": "feedback",
+    "source": "Rohan Patel",
+    "details": {
+      "feedback_item": "exercise plan difficulty",
+      "comment": "New plan is tougher than expected. Prioritizing form over reps. Requesting data on impact of intensity adjustments on BP & HRV.",
+      "travel": "Busy week with local meetings in Singapore."
+    }
+  },
+  {
+    "data_type": "exercise_plan_feedback",
+    "source": "Advik",
+    "details": {
+      "date": "2025-09-09",
+      "feedback": "Rohan found the new high-intensity exercise plan challenging.  Prioritizing form over reps. Requesting data on impact of intensity adjustments on BP and HRV.",
+      "requested_data": [
+        "intensity_BP_correlation",
+        "intensity_HRV_correlation"
+      ]
+    }
+  },
+  {
+    "data_type": "Exercise Intensity Analysis",
+    "source": "Whoop & Garmin Data",
+    "details": {
+      "intensity_levels": [
+        {
+          "level": "Low",
+          "BP_impact": "Minimal decrease",
+          "HRV_impact": "Slight increase"
+        },
+        {
+          "level": "Moderate",
+          "BP_impact": "Moderate decrease",
+          "HRV_impact": "Moderate increase"
+        },
+        {
+          "level": "High",
+          "BP_impact": "Significant decrease (short-term)",
+          "HRV_impact": "Slight decrease (short-term), potential rebound"
+        }
+      ],
+      "recommendations": "Prioritize perfect form at lower intensity this week to maximize HRV and BP benefits. Gradually increase intensity next week based on your body\u2019s response."
+    }
+  },
+  {
+    "data_type": "Nutrition Plan Adjustment",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "plan_adjustment": "Maintain current plan, prioritizing form over intensity for Week 25. Review food log and HRV/BP data in Week 26 to adjust intensity."
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data",
+      "data_requested": [
+        "intensity adjustments impact on BP",
+        "intensity adjustments impact on HRV"
+      ]
+    }
+  },
+  {
+    "data_type": "Whoop Data Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_time": "2025-09-09T20:30:00",
+      "data_requested": [
+        "HRV",
+        "BP",
+        "Workout Intensity"
+      ],
+      "analysis_requested": "Correlation between intensity, HRV, and BP"
+    }
+  },
+  {
+    "data_type": "Exercise Plan Update",
+    "source": "Rachel (PT)",
+    "details": {
+      "week": 25,
+      "plan_update": "Focus on perfect form. Intensity adjustments next week based on HRV and BP response."
+    }
+  },
+  {
+    "data_type": "schedule_confirmation",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "member": "Rohan Patel",
+      "week": 25,
+      "events": [
+        {
+          "day": "Monday",
+          "time": "To be confirmed",
+          "event": "Check-in with Advik, Carla, and Rachel to review data and adjust workout plan"
+        },
+        {
+          "day": "Monday-Friday",
+          "time": "All day",
+          "event": "Local meetings in Singapore"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "Whoop Data Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_time": "2025-09-09T22:55:00",
+      "data_requested": [
+        "HRV",
+        "BP",
+        "Workout Intensity Correlation"
+      ]
+    }
+  },
+  {
+    "data_type": "Whoop HRV Trend",
+    "source": "Whoop",
+    "details": {
+      "trend": "Upward",
+      "period": "Last 7 days",
+      "average_hrv": "80ms (example)",
+      "notes": "Significant improvement observed post-stressful events."
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "requested_by": "Rohan Patel",
+      "participants": [
+        "Rohan Patel",
+        "Advik"
+      ],
+      "topic": "HRV optimization for travel",
+      "requested_time": "Tomorrow",
+      "data_needed": [
+        "HRV data",
+        "recovery optimization strategies for travel"
+      ]
+    }
+  },
+  {
+    "data_type": "Whoop HRV and Recovery Data",
+    "source": "Whoop Strap",
+    "details": {
+      "average_hrv_past_week": 75,
+      "average_recovery_past_week": 78,
+      "hrv_during_travel": {
+        "average_hrv": 65,
+        "recovery": 60
+      },
+      "recommendations": [
+        "Prioritize 7-8 hours of sleep per night",
+        "Incorporate short mindfulness exercises (5-10 minutes) throughout the day",
+        "Perform easy bodyweight exercises, even if time is limited",
+        "Hydration is key",
+        "Minimize alcohol consumption"
+      ]
+    }
+  },
+  {
+    "data_type": "Medical Advice",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-09-10",
+      "time": "01:47 AM",
+      "advice": "Address elevated homocysteine through dietary adjustments and B vitamin supplementation. Prioritize consistent sleep and mindful practices during travel."
+    }
+  },
+  {
+    "data_type": "query",
+    "source": "Rohan Patel",
+    "details": {
+      "query_type": "data_request",
+      "data_requested": [
+        "homocysteine levels",
+        "B vitamin supplementation recommendations"
+      ]
+    }
+  },
+  {
+    "data_type": "HRV and Homocysteine Data",
+    "source": "Whoop & Lab Results",
+    "details": {
+      "homocysteine": {
+        "level": "15 micromol/L",
+        "recommendation": "Increase B vitamins intake (B6, B9, B12), reduce inflammation, prioritize protein"
+      },
+      "hrv_improvement_with_short_mindfulness": {
+        "5_min_meditation": "5% increase in HRV",
+        "10_min_meditation": "10% increase in HRV",
+        "deep_breathing_5_min": "3% increase in HRV"
+      }
+    }
+  },
+  {
+    "data_type": "Communication Log",
+    "source": "WhatsApp",
+    "details": {
+      "timestamp": "2025-09-10 02:39:00",
+      "sender": "Rohan Patel",
+      "recipient": "Elyx Team",
+      "message": "Okay, thanks. Received the data. Jakarta trip will be hectic, so short mindfulness exercises might be more realistic than full sessions. Let's discuss tomorrow."
+    }
+  },
+  {
+    "data_type": "Medical Advice",
+    "source": "Dr. Warren",
+    "details": {
+      "timestamp": "2025-09-10T02:58:00",
+      "advice": "Review attached data on homocysteine and B vitamin supplementation. Prioritize sleep and short mindfulness exercises during travel to Jakarta. Further discussion scheduled for tomorrow.",
+      "patient": "Rohan Patel"
+    }
+  },
+  {
+    "data_type": "Member Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "Data & Rationale",
+      "topic": "B Vitamin Supplementation & Mindfulness",
+      "specific_requests": [
+        "Data supporting specific B vitamin recommendations for elevated homocysteine.",
+        "Quantifiable impact of missing a full mindfulness session on HRV."
+      ]
+    }
+  },
+  {
+    "data_type": "sleep_metrics",
+    "source": "Whoop",
+    "details": {
+      "date": "2025-09-09",
+      "sleep_duration": "6.5 hours",
+      "sleep_quality": "Fair",
+      "hrv_dip": "Yes",
+      "notes": "Slight dip after intense piano practice"
+    }
+  },
+  {
+    "data_type": "Sleep Metrics",
+    "source": "Self-reported",
+    "details": {
+      "date": "2025-09-10",
+      "sleep_duration": "6 hours",
+      "sleep_quality": "Fair"
+    }
+  },
+  {
+    "data_type": "physiotherapy_notes",
+    "source": "Rachel (PT)",
+    "details": {
+      "date": "2025-09-10",
+      "time": "08:05 AM",
+      "notes": "Advised Rohan on maintaining proper form during piano practice to prevent injury. Emphasized importance of posture and rest to avoid strain."
+    }
+  },
+  {
+    "data_type": "Nutrition Check-in",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "timestamp": "2025-09-10T08:35:00",
+      "request": "Review Rohan's food log for alignment with his increased activity levels and piano practice"
+    }
+  },
+  {
+    "data_type": "Data Request",
+    "source": "Rohan Patel",
+    "details": {
+      "requests": [
+        {
+          "recipient": "Advik",
+          "data_type": "HRV data",
+          "description": "Correlation between piano practice intensity and HRV dip"
+        },
+        {
+          "recipient": "Carla",
+          "data_type": "Nutrition recommendations",
+          "description": "Foods and habits for brain health, with supporting data on efficacy"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "Whoop & Piano Practice Correlation",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "correlation_analysis": {
+        "variables": [
+          "Piano Practice Duration",
+          "Piano Practice Intensity",
+          "Post-Practice HRV"
+        ],
+        "correlation_coefficients": {
+          "Duration-HRV": -0.65,
+          "Intensity-HRV": -0.72
+        },
+        "notes": "Negative correlation indicates increased practice duration/intensity is associated with a lower HRV."
+      }
+    }
+  },
+  {
+    "data_type": "nutrition_recommendations",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "2025-09-10",
+      "recommendations": [
+        "Increase Omega-3 fatty acid intake (salmon, walnuts, flaxseeds)",
+        "Increase antioxidant-rich foods (berries, leafy greens, dark chocolate)",
+        "Increase B vitamin intake (whole grains, legumes, eggs)",
+        "Maintain hydration"
+      ]
+    }
+  },
+  {
+    "data_type": "Correlation Analysis",
+    "source": "Whoop & Self-Reported Data",
+    "details": {
+      "correlation_coefficient": -0.75,
+      "p_value": 0.002,
+      "confidence_interval": "[-0.85, -0.60]",
+      "variables": [
+        "Piano Practice Intensity",
+        "HRV Dip"
+      ],
+      "notes": "Statistically significant negative correlation; increased piano practice intensity is associated with a larger HRV dip."
+    }
+  },
+  {
+    "data_type": "nutrition_recommendations",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "09/10/2025",
+      "recommendations": [
+        {
+          "nutrient": "Omega-3 Fatty Acids",
+          "sources": [
+            "Salmon",
+            "Walnuts",
+            "Flaxseed"
+          ],
+          "benefits": [
+            "Improved cognitive function",
+            "Reduced inflammation"
+          ]
+        },
+        {
+          "nutrient": "Antioxidants",
+          "sources": [
+            "Berries",
+            "Spinach",
+            "Dark Chocolate"
+          ],
+          "benefits": [
+            "Protection against oxidative stress",
+            "Improved brain health"
+          ]
+        },
+        {
+          "nutrient": "B Vitamins",
+          "sources": [
+            "Eggs",
+            "Whole Grains",
+            "Leafy Greens"
+          ],
+          "benefits": [
+            "Energy production",
+            "Neurotransmitter synthesis"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_note",
+    "source": "Neel",
+    "details": {
+      "meeting_topic": "Strategic Planning for High-Pressure Periods",
+      "date": "2025-09-10",
+      "time": "14:15",
+      "key_decisions": [
+        "Focus on building resilience.",
+        "Proactive data-driven plan adjustments."
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "requested_meeting": {
+        "attendees": [
+          "Rohan Patel",
+          "Neel"
+        ],
+        "topic": "Impact of missed check-ins on health progress",
+        "proposed_times": [
+          "September 12th, 10 AM",
+          "September 13th, 2 PM"
+        ]
+      }
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Neel",
+    "details": {
+      "recipient": "Rohan Patel",
+      "topic": "Proactive health management strategies",
+      "proposed_times": [
+        "Tomorrow, 9:00 AM",
+        "Tomorrow, 12:00 PM",
+        "Tomorrow, 5:00 PM"
+      ]
+    }
+  },
+  {
+    "data_type": "Missed Check-in Impact Analysis",
+    "source": "Elyx Performance Platform",
+    "details": {
+      "missed_check_ins": [
+        {
+          "date": "2025-09-05",
+          "type": "Nutrition Check-in",
+          "impact_on_HRV": "-5%",
+          "impact_on_sleep": "-30 minutes",
+          "impact_on_blood_pressure": "+5 mmHg systolic"
+        }
+      ],
+      "overall_impact": "Missed check-ins, while infrequent, correlate with a decrease in HRV and sleep quality, and a slight increase in systolic blood pressure.  Proactive strategies are essential during busy travel weeks."
+    }
+  },
+  {
+    "data_type": "Request for Data",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "Proactive Stress Management Strategies",
+      "specific_data_points": [
+        "HRV trends during high-pressure situations",
+        "Impact of sleep disruption on HRV and other health metrics",
+        "Correlation between stress levels and dietary choices",
+        "Effectiveness of different relaxation techniques"
+      ],
+      "context": "US Trip (Wed-Sun)"
+    }
+  },
+  {
+    "data_type": "Analysis Plan",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "plan_description": "Proactive stress management during high-pressure periods and travel",
+      "metrics": [
+        "Whoop HRV",
+        "Sleep duration",
+        "Sleep quality",
+        "Impact of missed check-ins"
+      ],
+      "analysis_methods": [
+        "Trend analysis",
+        "Correlation analysis",
+        "Quantifiable impact assessment"
+      ],
+      "output_format": "Executive summary with data visualizations"
+    }
+  },
+  {
+    "data_type": "Medical Advice",
+    "source": "Dr. Warren",
+    "details": {
+      "advice": "Prioritize consistent sleep and hydration during travel to mitigate stress and maintain health metrics.",
+      "rationale": "Sleep and hydration are crucial for stress management and overall well-being, especially during travel."
+    }
+  },
+  {
+    "data_type": "scheduling_request",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "meeting_type": "trip_preparation",
+      "attendees": [
+        "Rohan Patel",
+        "Neel (Concierge Lead)",
+        "Advik (Performance Scientist)"
+      ],
+      "date": "September 11th, 2025",
+      "time": "To be confirmed",
+      "additional_meeting": {
+        "attendees": [
+          "Rohan Patel",
+          "Dr. Warren (Medical Strategist)"
+        ],
+        "date": "September 12th, 2025",
+        "time": "To be confirmed"
+      }
+    }
+  },
+  {
+    "data_type": "HRV & Sleep Analysis - Preliminary",
+    "source": "Whoop",
+    "details": {
+      "pre_travel_hrv": "Average HRV decreased by 15% compared to the previous week.",
+      "sleep_duration": "Average sleep decreased by 1 hour compared to the previous week.",
+      "sleep_quality": "Sleep efficiency decreased by 5% compared to the previous week.",
+      "recovery": "Overall recovery score decreased by 10 points compared to the previous week."
+    }
+  },
+  {
+    "data_type": "Food Log Analysis",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "2025-09-11",
+      "analysis": "Initial review complete.  Further adjustments needed based on client's feedback and upcoming travel schedule."
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_with": "Carla",
+      "topic": "Nutrition plan review and 'travel survival guide' adjustments",
+      "scheduled_time": "Tomorrow afternoon"
+    }
+  },
+  {
+    "data_type": "Medical Summary",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "09/12/2025",
+      "patient": "Rohan Patel",
+      "summary": "Positive trends in lipid markers; elevated homocysteine requires further attention.  Discussion planned for tomorrow."
+    }
+  },
+  {
+    "data_type": "Medical Note",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-09-12",
+      "time": "14:28",
+      "patient": "Rohan Patel",
+      "note": "Bloodwork review: Positive trends in lipid markers; elevated homocysteine persists.  Dietary and supplemental adjustments needed."
+    }
+  },
+  {
+    "data_type": "medical_recommendation_request",
+    "source": "Rohan Patel",
+    "details": {
+      "date": "09/12/2025",
+      "time": "16:15",
+      "topic": "Elevated Homocysteine",
+      "request": "Data supporting B vitamin and anti-inflammatory recommendations"
+    }
+  },
+  {
+    "data_type": "Nutritional Recommendations",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "recommendations": [
+        {
+          "nutrient": "Vitamin B6",
+          "rationale": "Supports homocysteine metabolism.",
+          "sources": [
+            "Bananas",
+            "Chickpeas",
+            "Salmon"
+          ],
+          "supplement_consideration": "May be considered if dietary intake is insufficient."
+        },
+        {
+          "nutrient": "Vitamin B9 (Folate)",
+          "rationale": "Essential for DNA synthesis and cell division.",
+          "sources": [
+            "Leafy greens",
+            "Legumes",
+            "Fortified cereals"
+          ],
+          "supplement_consideration": "May be considered if dietary intake is insufficient."
+        },
+        {
+          "nutrient": "Vitamin B12",
+          "rationale": "Crucial for nerve function and red blood cell formation.",
+          "sources": [
+            "Meat",
+            "Poultry",
+            "Fish",
+            "Fortified foods"
+          ],
+          "supplement_consideration": "May be considered for vegetarians/vegans or those with malabsorption issues."
+        }
+      ],
+      "anti-inflammatory_strategies": [
+        "Increase omega-3 fatty acid intake (e.g., fatty fish, flaxseeds)",
+        "Reduce saturated and trans fat intake",
+        "Increase consumption of fruits and vegetables rich in antioxidants"
+      ]
+    }
+  },
+  {
+    "data_type": "Medical Recommendation",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "date": "09/12/2025",
+      "recommendations": [
+        {
+          "item": "Increased B vitamin intake (B6, B9, B12)",
+          "rationale": "To lower elevated homocysteine levels",
+          "method": "Dietary adjustments and potential supplementation",
+          "data_reference": "Attached document"
+        },
+        {
+          "item": "Anti-inflammatory diet",
+          "rationale": "To reduce inflammation and support overall health",
+          "method": "Focus on fruits, vegetables, and whole grains",
+          "data_reference": "Attached document"
+        }
+      ]
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data",
+      "data_requested": [
+        "ROI on B vitamin and anti-inflammatory strategies regarding blood pressure reduction"
+      ],
+      "timestamp": "2025-09-12T19:05:00"
+    }
+  },
+  {
+    "data_type": "Nutritional Plan & Data",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "09/12/2025",
+      "plan_summary": "Dietary adjustments to reduce inflammation and increase B vitamins (B6, B9, B12) to lower homocysteine levels and improve blood pressure.",
+      "attached_data": [
+        "B Vitamin Deficiency and Hypertension Research Paper.pdf",
+        "Inflammation and Blood Pressure Correlation Data.csv",
+        "Sample Meal Plan for B Vitamins and Anti-inflammatory Foods.pdf"
+      ]
+    }
+  },
+  {
+    "data_type": "Data Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_date": "2025-09-13",
+      "request_time": "20:15",
+      "data_requested": [
+        "8-month HRV trends during travel",
+        "Correlation between HRV and blood pressure during travel",
+        "Quantified impact of missed check-ins on health metrics"
+      ]
+    }
+  },
+  {
+    "data_type": "Data Review Summary",
+    "source": "Advik (Performance Scientist)",
+    "details": {
+      "period": "8 months",
+      "metrics": [
+        {
+          "metric": "HRV during travel",
+          "trend": "Decreased HRV consistently observed during travel periods, correlating with reported sleep disturbances and increased stress.",
+          "correlation_with_blood_pressure": "A moderate negative correlation observed between decreased HRV during travel and slightly elevated systolic blood pressure readings upon return."
+        },
+        {
+          "metric": "Impact of missed check-ins",
+          "quantification": "Missed check-ins correlated with a decrease in adherence to dietary and exercise plans, resulting in a less consistent decrease in systolic blood pressure and cholesterol levels."
+        }
+      ],
+      "additional_notes": "Detailed data visualizations and statistical analysis are available upon request.  This summary highlights significant trends; specific data points are available in the attached file."
+    }
+  },
+  {
+    "data_type": "Conversation Summary",
+    "source": "Rohan Patel",
+    "details": {
+      "timestamp": "2025-09-14T00:07:00",
+      "message": "Thanks, Advik. Looking at the data now. Interesting correlation between missed check-ins and HRV dips during travel. Let's discuss mitigation strategies tomorrow."
+    }
+  },
+  {
+    "data_type": "Member Request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "Nutritional Guidance",
+      "context": "Travel to South Korea",
+      "specific_needs": "Healthy snack options for long business meetings"
+    }
+  },
+  {
+    "data_type": "Nutrition Plan Adjustment",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "2025-09-14",
+      "adjustment_type": "Travel Snack Recommendations",
+      "recommendations": [
+        "Nuts",
+        "Seeds",
+        "Protein bars"
+      ],
+      "rationale": "Nutrient-dense, portable, and suitable for long meetings."
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_topic": "Health Plan Adjustments and New Goal Discussion",
+      "participants": [
+        "Rohan Patel",
+        "Advik",
+        "Carla"
+      ],
+      "scheduled_time": "September 14th, 10:00 AM SGT"
+    }
+  },
+  {
+    "data_type": "meeting_scheduled",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Advik",
+        "Carla"
+      ],
+      "topic": "Review 8-month data, discuss South Korea trip strategies, and explore new golf health goal",
+      "date": "September 14th, 2025",
+      "time": "To be determined"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Advik",
+    "details": {
+      "date": "2025-09-15",
+      "time": "10:00 AM",
+      "attendees": [
+        "Rohan Patel",
+        "Advik",
+        "Neel",
+        "Carla"
+      ],
+      "topic": "South Korea Trip Strategies & New Golf Goal"
+    }
+  },
+  {
+    "data_type": "meeting request",
+    "source": "Rohan Patel",
+    "details": {
+      "topic": "South Korea trip snack options and new golf goal integration",
+      "requested_participants": [
+        "Carla",
+        "Advik",
+        "Neel"
+      ],
+      "preferred_time": "Tomorrow afternoon"
+    }
+  },
+  {
+    "data_type": "meeting_agenda",
+    "source": "Advik",
+    "details": {
+      "meeting_topic": "Rohan's new golf goal and South Korea trip strategies",
+      "agenda_items": [
+        "Analysis of Rohan's baseline Whoop data (HRV & sleep)",
+        "Design of experiment to optimize golf training & recovery",
+        "Review of South Korea trip snack plan (attached document)",
+        "Integration of golf goal into overall health plan"
+      ]
+    }
+  },
+  {
+    "data_type": "Medical Note",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "2025-09-14",
+      "time": "04:15",
+      "note": "Encouraging lipid trends; elevated homocysteine requires discussion and travel strategy."
+    }
+  },
+  {
+    "data_type": "request",
+    "source": "Rohan Patel",
+    "details": {
+      "request_type": "data",
+      "data_requested": "Detailed bloodwork results showing homocysteine levels and related metrics."
+    }
+  },
+  {
+    "data_type": "Nutrition Plan Adjustment",
+    "source": "Carla (Nutritionist)",
+    "details": {
+      "date": "2025-09-14",
+      "patient": "Rohan Patel",
+      "adjustment_reason": "Elevated homocysteine levels and upcoming travel",
+      "recommendations": [
+        "Optimize B vitamin intake through dietary adjustments and supplements",
+        "Provide travel-friendly B vitamin supplement options"
+      ]
+    }
+  },
+  {
+    "data_type": "Medical Advice",
+    "source": "Dr. Warren",
+    "details": {
+      "date": "09/14/2025",
+      "time": "06:53 AM",
+      "advice": "Review data on elevated homocysteine levels.  Further discussion scheduled later today regarding mitigation strategies and Jakarta trip optimization."
+    }
+  },
+  {
+    "data_type": "Meeting Request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_time": "10:00 AM, September 14th, 2025",
+      "attendees": [
+        "Rohan Patel",
+        "Dr. Warren",
+        "Advik",
+        "Carla"
+      ],
+      "agenda": [
+        "Review of homocysteine data",
+        "Discussion of B vitamin strategies",
+        "Jakarta trip optimization"
+      ]
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Dr. Warren",
+    "details": {
+      "meeting_time": "10:00 AM, September 14th, 2025",
+      "attendees": [
+        "Rohan Patel",
+        "Dr. Warren",
+        "Advik",
+        "Carla"
+      ],
+      "topic": "Homocysteine management and Jakarta trip optimization"
+    }
+  },
+  {
+    "data_type": "meeting_summary",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_time": "10:15 AM, September 14th, 2025",
+      "attendees": [
+        "Rohan Patel",
+        "Dr. Warren",
+        "Advik",
+        "Carla"
+      ],
+      "topics_discussed": [
+        "Homocysteine elevation",
+        "Blood pressure impact",
+        "B vitamin supplementation strategies",
+        "Jakarta trip feasibility"
+      ]
+    }
+  },
+  {
+    "data_type": "Medical Advice",
+    "source": "Dr. Warren",
+    "details": {
+      "patient": "Rohan Patel",
+      "timestamp": "2025-09-14T10:35:00",
+      "advice": "Elevated homocysteine increases stroke risk. B vitamins (B6, B9, B12) are crucial for metabolism.  Travel-friendly supplementation will be discussed."
+    }
+  },
+  {
+    "data_type": "Meeting Request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_topic": "Jakarta Trip & Homocysteine Management",
+      "requested_data": [
+        "Travel-friendly B vitamin options",
+        "Dosage recommendations",
+        "Quantifiable data on BP and stroke risk reduction"
+      ],
+      "time_requested": "11:30 AM, September 14th, 2025"
+    }
+  },
+  {
+    "data_type": "meeting_scheduled",
+    "source": "Neel (Concierge Lead)",
+    "details": {
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "topic": "8-Month Progress Review & Next Steps",
+      "date": "2025-09-15",
+      "time": "10:00 AM"
+    }
+  },
+  {
+    "data_type": "meeting_request",
+    "source": "Rohan Patel",
+    "details": {
+      "meeting_topic": "8-month progress review",
+      "requested_data": [
+        "HRV trends during travel",
+        "ROI on dietary/exercise changes"
+      ],
+      "meeting_time": "To be determined"
+    }
+  },
+  {
+    "data_type": "meeting_schedule",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "meeting_id": "QBR_Rohan_8Month",
+      "attendees": [
+        "Rohan Patel",
+        "Neel (Concierge Lead)"
+      ],
+      "date": "2025-09-16",
+      "time": "10:00 AM",
+      "agenda": "8-month progress review, next steps, data review (HRV trends during travel, ROI on dietary/exercise changes)",
+      "preparation": "Advik to provide data on HRV trends and ROI"
+    }
+  },
+  {
+    "data_type": "meeting_confirmation",
+    "source": "Sarah Tan",
+    "details": {
+      "meeting_topic": "8-month progress review",
+      "attendees": [
+        "Rohan Patel",
+        "Neel"
+      ],
+      "date": "9/16/25",
+      "time": "Morning",
+      "data_shared": true,
+      "data_confirmation": true
+    }
+  },
+  {
+    "data_type": "meeting_confirmation",
+    "source": "Neel",
+    "details": {
+      "meeting_time": "9/16/25, 8:00 AM",
+      "attendees": [
+        "Neel",
+        "Rohan Patel"
+      ],
+      "agenda": [
+        "8-month progress review",
+        "Future support options",
+        "Feedback gathering"
+      ]
+    }
+  },
+  {
+    "data_type": "Data Request Confirmation",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "requestor": "Rohan Patel",
+      "data_items": [
+        "Raw ROI data on dietary/exercise changes",
+        "Correlation data: Piano practice, stress levels, HRV"
+      ],
+      "recipient": "Rohan Patel",
+      "confirmation_required": true
+    }
+  },
+  {
+    "data_type": "confirmation",
+    "source": "Ruby (Concierge)",
+    "details": {
+      "recipient": "Rohan Patel",
+      "data_sent": [
+        "ROI calculations on dietary/exercise changes",
+        "Correlation between piano practice, stress levels, and HRV"
+      ],
+      "confirmation_status": "pending"
+    }
+  }
+]

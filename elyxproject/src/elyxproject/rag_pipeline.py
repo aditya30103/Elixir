@@ -4,8 +4,8 @@ from src.elyxproject.memory import SemanticMemory
 from src.elyxproject.agents import NarrativeAgents
 
 # Ensure you have a .env file with your GEMINI_API_KEY
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 class RAGPipeline:
     """
