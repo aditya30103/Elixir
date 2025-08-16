@@ -1,115 +1,176 @@
-// export default function DashboardPage() {
-//   return (
-//     <div>
-//       <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
-//       <p className="text-gray-600">
-//         Ops metrics, persona analysis, and adherence charts will go here.
-//       </p>
-//     </div>
-//   );
-// }
-
-
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, PieChart, Pie, Cell, LineChart, Line } from "recharts";
-import journeyData from "@/data/journey.json";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  BarChart,
+  Bar,
+  PieChart,
+  Pie,
+  Cell,
+  ResponsiveContainer,
+} from "recharts";
+import fullStory from "@/data/fullStory.json";
+import { format } from "date-fns";
+
+// Extract HRV data
+const hrvTrend = fullStory
+  .filter((log) => log.data_type === "biometrics" || log.metric === "HRV")
+  .map((log) => {
+    const date =
+      log.details?.date ||
+      log.details?.date_utc ||
+      log.timestamp?.replace(/\[|\].*/g, "") || // fallback: extract date from timestamp
+      new Date().toISOString();
+
+    return {
+      date: format(new Date(date), "MMM d"),
+      hrv: log.details?.hrv_morning_ms || log.details?.value || null,
+    };
+  })
+  .filter((d) => d.hrv !== null);
+
+// Calculate Avg HRV
+const avgHRV = hrvTrend.length
+  ? Math.round(hrvTrend.reduce((a, b) => a + b.hrv, 0) / hrvTrend.length)
+  : "--";
+
+// Extract BP readings
+const bpReadings = fullStory
+  .filter((log) => log.data_type === "biometrics" || log.data_type === "daily_check_in")
+  .map((log) => {
+    const date =
+      log.details?.date ||
+      log.details?.date_utc ||
+      log.timestamp?.replace(/\[|\].*/g, "") ||
+      new Date().toISOString();
+
+    return {
+      date: format(new Date(date), "MMM d"),
+      systolic:
+        log.details?.blood_pressure_systolic ||
+        log.details?.blood_pressure?.systolic ||
+        parseInt(log.details?.blood_pressure?.split("/")[0]) ||
+        null,
+      diastolic:
+        log.details?.blood_pressure_diastolic ||
+        log.details?.blood_pressure?.diastolic ||
+        parseInt(log.details?.blood_pressure?.split("/")[1]) ||
+        null,
+    };
+  })
+  .filter((d) => d.systolic && d.diastolic);
+
+// Latest BP
+const latestBP =
+  bpReadings.length > 0
+    ? `${bpReadings[bpReadings.length - 1].systolic}/${bpReadings[bpReadings.length - 1].diastolic}`
+    : "--";
+
+// Extract Nutrition adherence
+const nutritionAdherence =
+  fullStory.find((log) => log.data_type === "nutrition_adherence")?.details
+    ?.adherence_percentage ||
+  fullStory.find((log) => log.data_type === "adherence_log")?.details
+    ?.compliance_percentage ||
+  "--";
+
+// Extract Workout adherence
+const workoutAdherence =
+  fullStory.find((log) => log.data_type === "adherence_report")?.details
+    ?.adherence_percentage || "--";
 
 export default function DashboardPage() {
-  const member = journeyData.member;
-  const metrics = journeyData.metrics;
-
-  const opsData = [
-    { role: "Doctor", hours: metrics.doctorHours },
-    { role: "Nutrition", hours: metrics.nutritionHours },
-    { role: "PT", hours: metrics.ptHours },
-    { role: "Concierge", hours: metrics.conciergeHours },
-  ];
-
-  const apoBTrend = [
-    { quarter: "Q1", value: 105 },
-    { quarter: "Q2", value: 98 },
-    { quarter: "Q3", value: 90 },
-    { quarter: "Q4", value: 92 }
-  ];
-
-  const adherenceData = [
-    { name: "Adherence", value: metrics.adherence },
-    { name: "Missed", value: 100 - metrics.adherence }
-  ];
-  const COLORS = ["#4CAF50", "#F44336"];
-
   return (
-    <div>
-      <h1 className="text-3xl font-bold mb-6">Dashboard</h1>
-
-      {/* Profile */}
-      <Card className="mb-6">
-        <CardContent className="p-4">
-          <h2 className="text-xl font-semibold mb-2">Member Profile</h2>
-          <p><strong>Name:</strong> {member.name}</p>
-          <p><strong>Age:</strong> {member.age}</p>
-          <p><strong>Location:</strong> {member.location}</p>
-          <p><strong>Occupation:</strong> {member.occupation}</p>
-          <p><strong>Travel:</strong> {member.travelFrequency}</p>
-          <p><strong>Wearables:</strong> {member.wearables.join(", ")}</p>
-        </CardContent>
-      </Card>
-
-      {/* Metrics Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-        <Card><CardContent className="p-4 text-center"><h3 className="text-lg font-bold">{metrics.adherence}%</h3><p className="text-sm text-gray-500">Adherence</p></CardContent></Card>
-        <Card><CardContent className="p-4 text-center"><h3 className="text-lg font-bold">{metrics.labTests}</h3><p className="text-sm text-gray-500">Lab Tests</p></CardContent></Card>
-        <Card><CardContent className="p-4 text-center"><h3 className="text-lg font-bold">{metrics.travelWeeks}</h3><p className="text-sm text-gray-500">Travel Weeks</p></CardContent></Card>
-        <Card><CardContent className="p-4 text-center"><h3 className="text-lg font-bold">{metrics.doctorHours + metrics.nutritionHours + metrics.ptHours + metrics.conciergeHours}</h3><p className="text-sm text-gray-500">Total Hours</p></CardContent></Card>
+    <div className="p-8 bg-gray-50 min-h-screen">
+      {/* Profile Section */}
+      <div className="flex items-center gap-4 mb-8">
+        <div className="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center text-xl font-bold">
+          RP
+        </div>
+        <div>
+          <h1 className="text-2xl font-bold">Rohan Patel</h1>
+          <p className="text-gray-600">
+            42 yrs · Global Tech Executive · Frequent Traveler · Under Elyx Health Program
+          </p>
+          <p className="text-sm text-gray-500 italic">
+            Focus: Cardiovascular resilience, stress management, peak performance
+          </p>
+        </div>
       </div>
 
-      {/* Charts */}
-      <div className="grid md:grid-cols-2 gap-6">
-        {/* Ops Hours Bar Chart */}
+      {/* Summary Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
         <Card>
-          <CardContent className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Ops Hours by Role</h3>
-            <ResponsiveContainer width="100%" height={250}>
-              <BarChart data={opsData}>
-                <XAxis dataKey="role" />
-                <YAxis />
-                <Tooltip />
-                <Bar dataKey="hours" fill="#4F46E5" />
-              </BarChart>
-            </ResponsiveContainer>
+          <CardContent className="p-4 text-center">
+            <p className="text-gray-500">Avg HRV</p>
+            <p className="text-2xl font-bold text-blue-600">
+              {avgHRV} {avgHRV !== "--" ? "ms" : ""}
+            </p>
           </CardContent>
         </Card>
+        <Card>
+          <CardContent className="p-4 text-center">
+            <p className="text-gray-500">Latest BP</p>
+            <p className="text-2xl font-bold text-red-600">
+              {latestBP} {latestBP !== "--" ? "mmHg" : ""}
+            </p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="p-4 text-center">
+            <p className="text-gray-500">Nutrition Adherence</p>
+            <p className="text-2xl font-bold text-green-600">
+              {nutritionAdherence !== "--" ? `${nutritionAdherence}%` : "--"}
+            </p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="p-4 text-center">
+            <p className="text-gray-500">Workout Adherence</p>
+            <p className="text-2xl font-bold text-purple-600">
+              {workoutAdherence !== "--" ? `${workoutAdherence}%` : "--"}
+            </p>
+          </CardContent>
+        </Card>
+      </div>
 
-        {/* ApoB Line Chart */}
+      {/* Charts Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* HRV Trend */}
         <Card>
           <CardContent className="p-4">
-            <h3 className="text-lg font-semibold mb-2">ApoB Trend</h3>
+            <h2 className="text-lg font-semibold mb-4">HRV Trend</h2>
             <ResponsiveContainer width="100%" height={250}>
-              <LineChart data={apoBTrend}>
-                <XAxis dataKey="quarter" />
+              <LineChart data={hrvTrend}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="date" />
                 <YAxis />
                 <Tooltip />
-                <Line type="monotone" dataKey="value" stroke="#F59E0B" strokeWidth={3} />
+                <Line type="monotone" dataKey="hrv" stroke="#2563eb" strokeWidth={2} />
               </LineChart>
             </ResponsiveContainer>
           </CardContent>
         </Card>
 
-        {/* Adherence Pie Chart */}
+        {/* BP Readings */}
         <Card>
           <CardContent className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Adherence Breakdown</h3>
+            <h2 className="text-lg font-semibold mb-4">Blood Pressure Readings</h2>
             <ResponsiveContainer width="100%" height={250}>
-              <PieChart>
-                <Pie data={adherenceData} cx="50%" cy="50%" label outerRadius={80} fill="#8884d8" dataKey="value">
-                  {adherenceData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
+              <BarChart data={bpReadings}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="date" />
+                <YAxis />
                 <Tooltip />
-              </PieChart>
+                <Bar dataKey="systolic" fill="#ef4444" />
+                <Bar dataKey="diastolic" fill="#facc15" />
+              </BarChart>
             </ResponsiveContainer>
           </CardContent>
         </Card>
@@ -117,4 +178,3 @@ export default function DashboardPage() {
     </div>
   );
 }
-
