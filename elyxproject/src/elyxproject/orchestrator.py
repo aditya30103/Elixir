@@ -1,44 +1,37 @@
 import json
+import time
+from datetime import datetime, timedelta
+import random
 from crewai import Crew, Task
 from pydantic import ValidationError
 from src.elyxproject.agents import NarrativeAgents
-from src.elyxproject.tasks import AgentOutput
+from src.elyxproject.models import ChatMessage, DataLog
 from dotenv import load_dotenv
 
 load_dotenv()
 
 class Orchestrator:
-    def __init__(self, plan_file_path="store/narrative_plan1.json"):
+    def __init__(self, hackathon_context: dict, plan_file_path="store/narrative_plan.json"):
         print("Initializing Orchestrator...")
+        self.hackathon_context = hackathon_context
         with open(plan_file_path, 'r') as f:
             self.plan = json.load(f)['weekly_plans']
-        
-        agent_factory = NarrativeAgents()
-        self.agents = {
-            "Rohan Patel": agent_factory.rohan_patel_agent(),
-            "Sarah Tan": agent_factory.sarah_tan_agent(),
-            "Ruby": agent_factory.ruby_concierge_agent(),
-            "Dr. Warren": agent_factory.dr_warren_agent(),
-            "Advik": agent_factory.advik_scientist_agent(),
-            "Carla": agent_factory.carla_nutritionist_agent(),
-            "Rachel": agent_factory.rachel_pt_agent(),
-            "Neel": agent_factory.neel_lead_agent()
-        }
-        self.router = agent_factory.routing_agent()
-        self.summarizer = agent_factory.summary_agent()
+
+        self.agents = NarrativeAgents()
+        self.router = self.agents.routing_agent()
+        self.summarizer = self.agents.summary_agent()
         print("Orchestrator Initialized.")
 
     def _get_next_speaker(self, weekly_context, conversation_history, long_term_memory):
+        agent_roles = self.agents.get_all_roles()
         prompt = f"""
         Given the long-term context, the weekly plan, and the recent conversation, who should speak next?
-        Your answer MUST be one of the following agent roles: {list(self.agents.keys())}.
+        Your answer MUST be one of the following agent roles: {agent_roles}.
 
         **Long-Term Memory (Summary of Prior Weeks):**
         {long_term_memory}
-
         **This Week's Plan:**
         {weekly_context}
-
         **Current Conversation History (last 5 messages):**
         {conversation_history}
         """
@@ -50,91 +43,123 @@ class Orchestrator:
     def run(self):
         full_conversation_log = []
         long_term_memory = "No history yet. This is Week 1."
+        context_str = str(self.hackathon_context)
+        
+        current_sim_time = datetime(2025, 8, 25, 9, 0, 0)
 
         for week_plan in self.plan:
             print(f"\n--- Generating Week {week_plan['week_number']}: {week_plan['theme']} ---")
             weekly_context = json.dumps(week_plan, indent=2)
-            short_term_memory_log = [] 
+            short_term_memory_log = []
             
-            num_turns = 7
-            
-            for i in range(num_turns):
-                history_snippet = "\n".join([f"{msg['speaker']}: {msg['message']}" for msg in short_term_memory_log[-5:]])
+            max_turns = 10
+            for i in range(max_turns):
+                history_snippet = "\n".join([f"{msg['timestamp']} {msg['speaker']}: {msg['message']}" for msg in short_term_memory_log[-5:]])
                 speaker_role = self._get_next_speaker(weekly_context, history_snippet, long_term_memory)
-                
-                if speaker_role not in self.agents:
+
+                if speaker_role not in self.agents.get_all_roles():
                     print(f"Router returned invalid agent: '{speaker_role}'. Defaulting to Rohan Patel.")
                     speaker_role = "Rohan Patel"
-                
+
                 print(f"Turn {i+1}: Speaker is {speaker_role}")
                 
-                # --- PROMPT IMPROVEMENT SECTION ---
+                delay_minutes = random.randint(5, 55)
+                current_sim_time += timedelta(minutes=delay_minutes)
+                
                 agent_task_prompt = f"""
                     You are {speaker_role}. Your task is to generate the next part of a conversation.
-                    Your final output MUST be a single, valid JSON object that strictly adheres to the `AgentOutput` Pydantic model.
 
-                    **CRITICAL INSTRUCTIONS:**
-                    1.  Your entire response must be a JSON object. Do NOT output a Python object representation (e.g., `outputs=[ChatMessage(...)]`).
-                    2.  The JSON must use double quotes for all keys and string values.
+                    **--- OUTPUT FORMAT INSTRUCTIONS ---**
+                    - **BREVITY IS KEY:** Your chat message MUST be concise and to the point, like a real WhatsApp message. Aim for 1-3 short sentences. AVOID long paragraphs.
+                    - **TIMESTAMP:** First, on a single line, write a plausible timestamp. It must be after **{current_sim_time.strftime('[%#m/%#d/%y, %#I:%M %p]')}**. Use the format `[M/D/YY, H:MM AM/PM]`.
+                    - **CHAT:** On the next line, write the conversational message as plain text.
+                    - **SEPARATOR:** On a new line, write the exact separator: ---DATA---
+                    - **DATA:** After the separator, write a single, valid JSON object for any data to log, or the word "None".
 
-                    **Correct Output Format Example:**
-                    ```json
-                    {{
-                      "outputs": [
-                        {{
-                          "speaker": "{speaker_role}",
-                          "message": "This is the content of the chat message."
-                        }},
-                        {{
-                          "data_type": "Biometric",
-                          "source": "Internal Log",
-                          "details": {{"heart_rate": 75, "status": "stable"}}
-                        }}
-                      ]
-                    }}
-                    ```
-                    (You can include just a ChatMessage, just a DataLog, or both in the 'outputs' list as needed.)
+                    **--- RULES FOR DATA LOGGING ---**
+                    - **Log ONLY objective, structured data.** (e.g., biometric numbers, appointment times, test results).
+                    - **DO NOT log conversational context or summaries.** If there is no objective data to log, you MUST write "None".
+                    - The JSON MUST contain "data_type", "source", and "details" keys.
 
-                    **CONTEXT FOR YOUR RESPONSE:**
-                    - **Long-Term Memory (Summary of Prior Weeks):** {long_term_memory}
-                    - **This Week's Plan:** {weekly_context}
-                    - **Current Conversation History:** {short_term_memory_log}
+                    **--- CORE CONTEXT & PERSONAS ---**
+                    {context_str}
+
+                    **--- CURRENT SITUATION ---**
+                    - Long-Term Memory: {long_term_memory}
+                    - This Week's Plan: {weekly_context}
+                    - Conversation History (most recent messages): {history_snippet}
                 """
-                # --- END OF PROMPT IMPROVEMENT ---
-
-                agent_task = Task(description=agent_task_prompt, agent=self.agents[speaker_role], expected_output="A valid JSON object based on the `AgentOutput` model.", output_pydantic=AgentOutput)
                 
-                turn_crew = Crew(agents=[self.agents[speaker_role]], tasks=[agent_task], verbose=0)
+                current_agent = self.agents.get_agent_by_role(speaker_role)
+                agent_task = Task(
+                    description=agent_task_prompt,
+                    agent=current_agent,
+                    expected_output="""A three-part response: a timestamp, a CONCISE chat message, and a valid data log (or "None"), separated by '---DATA---'."""
+                )
+                
+                turn_crew = Crew(agents=[current_agent], tasks=[agent_task], verbose=0)
                 turn_result = turn_crew.kickoff()
 
-                pydantic_result = None
-                if turn_result and turn_result.tasks_output:
-                    json_string = str(turn_result.tasks_output[0])
+                if turn_result and turn_result.raw:
+                    raw_output = turn_result.raw.strip()
                     
                     try:
-                        # Clean the string in case the LLM wraps it in ```json ... ```
-                        if json_string.startswith("```json"):
-                            json_string = json_string[7:-4]
-                        
-                        pydantic_result = AgentOutput.model_validate_json(json_string)
-                    except (json.JSONDecodeError, ValidationError) as e:
-                        print(f"  -> ERROR: Failed to parse JSON output from {speaker_role}. Error: {e}")
-                        print(f"  -> Raw output was: {json_string}")
+                        separator_index = raw_output.index("---DATA---")
+                        chat_part = raw_output[:separator_index].strip()
+                        data_part = raw_output[separator_index + len("---DATA---"):].strip()
+                    except ValueError:
+                        chat_part = raw_output
+                        data_part = "None"
 
-                if pydantic_result and hasattr(pydantic_result, 'outputs') and pydantic_result.outputs:
-                    for output in pydantic_result.outputs:
-                        if hasattr(output, 'speaker'):
-                            print(f"  -> {output.speaker}: {output.message}")
-                            short_term_memory_log.append(output.dict())
-                            full_conversation_log.append(output.dict())
-                        elif hasattr(output, 'data_type'):
-                            print(f"  -> LOGGED DATA: {output.data_type} from {output.source}")
-                            full_conversation_log.append(output.dict())
+                    # --- ROBUST PARSING LOGIC ---
+                    lines = chat_part.split('\n')
+                    timestamp = ""
+                    chat_message = ""
+
+                    if lines:
+                        first_line = lines[0].strip()
+                        # Check if the first line is likely a timestamp
+                        if first_line.startswith('[') and first_line.endswith(']'):
+                            timestamp = first_line
+                            # Handle case where message is on the same line vs. next line
+                            if len(lines) > 1:
+                                chat_message = "\n".join(lines[1:]).strip()
+                            else: # If message is on the same line (a common failure mode)
+                                end_of_timestamp = first_line.find(']') + 1
+                                potential_message = first_line[end_of_timestamp:].strip()
+                                chat_message = potential_message
+                        else: # If no timestamp is found, the whole thing is the message
+                            chat_message = chat_part
+
+                    # Validate or create a timestamp
+                    try:
+                        current_sim_time = datetime.strptime(timestamp, '[%m/%d/%y, %I:%M %p]')
+                    except (ValueError, IndexError):
+                        print(f"  -> WARN: Could not parse timestamp '{timestamp}'. Using internally tracked time.")
+                        timestamp = current_sim_time.strftime('[%#m/%#d/%y, %#I:%M %p]')
+
+                    if chat_message:
+                        print(f"  -> {timestamp} {speaker_role}: {chat_message}")
+                        chat_obj = ChatMessage(timestamp=timestamp, speaker=speaker_role, message=chat_message)
+                        short_term_memory_log.append(chat_obj.dict())
+                        full_conversation_log.append(chat_obj.dict())
+                    
+                    if data_part and data_part.lower() != 'none':
+                        try:
+                            data_json = json.loads(data_part)
+                            data_obj = DataLog(**data_json)
+                            print(f"  -> LOGGED DATA: {data_obj.data_type} from {data_obj.source}")
+                            full_conversation_log.append(data_obj.dict())
+                        except (json.JSONDecodeError, TypeError, ValidationError) as e:
+                            print(f"  -> WARN: {speaker_role} failed to produce a valid data log. Error: {e}")
                 else:
-                    if not pydantic_result:
-                        print(f"Agent {speaker_role} failed to generate a valid output.")
-            
+                    print(f"Agent {speaker_role} failed to generate any output.")
+                
+                # Re-add rate limit delay
+                time.sleep(3)
+
             print("\n--- Summarizing week to create long-term memory ---")
+            time.sleep(3) # Delay before summary call
             summary_task = Task(
                 description=f"Summarize the key events, decisions, and outcomes from this week's conversation log. Be concise. The conversation log is: {short_term_memory_log}",
                 agent=self.summarizer,
@@ -149,7 +174,7 @@ class Orchestrator:
             else:
                 print(f"Summarizer failed to generate a valid summary for Week {week_plan['week_number']}.")
 
-        with open("raw_conversation_log.json", "w") as f:
+        with open("store/full_conversation_log.json", "w") as f:
             json.dump(full_conversation_log, f, indent=2)
-        
-        return "Conversation generation complete. Log saved to 'raw_conversation_log.json'."
+
+        return "Conversation generation complete. Log saved to 'store/full_conversation_log.json'."

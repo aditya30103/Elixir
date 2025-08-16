@@ -1,0 +1,56 @@
+#================================================================
+# SINGLE SOURCE OF TRUTH FOR ELYX USER JOURNEY
+#================================================================
+
+### SINCE THIS FILE IN INJECTED PROMPT AT SEVERAL PLACES, IT REQURIRES CAREFUL IMPROVEMENT ###
+
+member_persona:
+  name: Rohan Patel
+  demographics: "46, Male, FinTech Executive (Regional Head of Sales) in Singapore."
+  lifestyle: "High-stress, analytical, data-driven, and time-constrained. Travels frequently for work (UK, US, South Korea, Jakarta), which impacts his health routines."
+  health_context: "Managing diagnosed Hypertension. Has a family history of heart disease, making cardiovascular health a top priority."
+  goals_and_motivations:
+    - "Primary: Reduce long-term heart disease risk and enhance cognitive function for his demanding career."
+    - "Secondary: Proactive health management and early disease detection."
+    - "Personal Growth: Sees health as an investment and is interested in new activities, such as learning the piano, for stress management."
+  personality_nuances:
+    - "Communication Style: Prefers concise, executive summaries but wants access to the underlying data to verify conclusions. Engages proactively when he sees interesting data trends."
+    - "Adherence Profile: Prone to non-adherence (~50% of the time), especially during travel or high-stress periods. This creates realistic friction points that the Elyx team must manage."
+
+elyx_team_personas:
+  - role: "Dr. Warren (Medical Strategist)"
+    responsibilities: "The clinical authority. Delivers diagnoses, interprets labs, and explains the 'why' behind the medical strategy."
+    voice_and_tone: "Precise and authoritative, but also reassuring and collaborative. A trusted partner."
+  - role: "Advik (Performance Scientist)"
+    responsibilities: "The data guru. Analyzes wearable data (Whoop, Garmin), sleep, HRV, and stress metrics. Frames insights as experiments."
+    voice_and_tone: "Analytical, curious, and pattern-oriented. Passionate about data."
+  - role: "Carla (Nutritionist)"
+    responsibilities: "The fuel expert. Manages nutrition plans, food logs, CGM data, and supplements."
+    voice_and_tone: "Practical, educational, and focused on the 'why' behind food choices."
+  - role: "Rachel (PT)"
+    responsibilities: "The movement coach. Manages exercise, mobility, and injury rehab. Updates exercise plans every 2 weeks."
+    voice_and_tone: "Direct, encouraging, and focused on form and function."
+  - role: "Ruby (Concierge)"
+    responsibilities: "The logistical hub. Manages all scheduling, reminders, and follow-ups, making the service feel seamless."
+    voice_and_tone: "Empathetic, organized, and proactive."
+  - role: "Neel (Concierge Lead)"
+    responsibilities: "The relationship manager. Handles big-picture reviews (QBRs) and de-escalates client friction."
+    voice_and_tone: "Strategic, reassuring, and focused on the big picture."
+
+narrative_constraints:
+  - "Diagnostics: A full diagnostic panel MUST be scheduled every three months (e.g., around Weeks 12 and 24)."
+  - "Travel: Rohan MUST travel for at least 1 week out of every 4 weeks. This must impact his data and adherence."
+  - "Exercise Updates: Rachel MUST update Rohan's exercise plan every 2 weeks."
+  - "Friction Points: The narrative MUST include 'FrictionPoint' events where Rohan is non-compliant (~50% of the time), leading to plan changes or conversations with Neel."
+  - "QBRs: Schedule Quarterly Business Reviews (QBRs) led by Neel at the end of Month 3 and Month 6."
+  - "Member-Initiated Conversations: Rohan should initiate conversations up to 5 times per week on average, driven by data curiosity."
+
+diagnostic_panel_tests:
+  name: "Quarterly Comprehensive Diagnostic Panel"
+  panels:
+    - "Core Blood Panel: Complete Blood Count (CBC), Comprehensive Metabolic Panel (CMP), Hemoglobin A1c (HbA1c)."
+    - "Advanced Lipid Panel: Apolipoprotein B (ApoB), Lipoprotein(a) [Lp(a)], LDL Particle Number, HDL Particle Number."
+    - "Inflammation Markers: High-Sensitivity C-Reactive Protein (hs-CRP), Fibrinogen."
+    - "Hormone Panel: DHEA-S, Total & Free Testosterone, Estradiol (E2), Sex Hormone-Binding Globulin (SHBG)."
+    - "Metabolic Health Markers: Fasting Insulin, Homocysteine."
+    - "Key Vitamin & Mineral Levels: Vitamin D, Vitamin B12, Magnesium."
