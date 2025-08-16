@@ -1,0 +1,201 @@
+{
+  "member": {
+    "name": "Rohan Patel",
+    "age": 46,
+    "location": "Singapore",
+    "occupation": "FinTech Sales Lead",
+    "travelFrequency": "1 week out of every 4",
+    "wearables": ["Garmin", "Whoop (trial)"]
+  },
+  "metrics": {
+    "adherence": 52,
+    "doctorHours": 14,
+    "nutritionHours": 10,
+    "ptHours": 12,
+    "conciergeHours": 20,
+    "labTests": 3,
+    "travelWeeks": 8
+  },
+  "episodes": [
+    {
+      "episodeId": "E01",
+      "title": "Episode 1: Onboarding & Baseline Discovery",
+      "dateRange": "Weeks 1-8",
+      "summary": "This period focused on gathering Rohan's history, conducting initial diagnostics, and establishing his baseline health metrics to create a foundational plan.",
+      "frictionPoints": [
+        "Initial workout plan was difficult to access due to a password requirement.",
+        "Member expressed frustration at the perceived slow pace and lack of proactivity during data collection.",
+        "Difficulty in obtaining complete medical records from a previous cardiologist in New York."
+      ],
+      "outcome": "A foundational Health Optimization Plan (v2.0) was created. Key risk areas, particularly an elevated ApoB level (105 mg/dL) and inconsistent sleep patterns, were identified as top priorities.",
+      "personaState": {
+        "before": "Proactive and data-driven but feeling his health management was 'very random and uncoordinated'.",
+        "after": "Engaged with the service but questioning the value and taking a more directive role in providing feedback."
+      },
+      "granularEvents": [
+        {
+          "eventId": "G01",
+          "week": 2,
+          "title": "Initial Blood Panel Ordered",
+          "description": "Dr. Warren ordered a comprehensive diagnostic panel to get a baseline for metabolic, hormonal, and inflammatory health.",
+          "sourceCommunication": "Dr. Warren: 'To proceed with a clinical-grade strategy, we must get a full picture. This is non-negotiable to ensure safety and avoid redundant testing.'"
+        },
+        {
+          "eventId": "G02",
+          "week": 4,
+          "title": "Whoop Strap Recommended",
+          "description": "Advik recommended upgrading from the Garmin watch to a Whoop strap for better sleep data.",
+          "sourceCommunication": "Advik: 'Your Garmin gives us a blurry photo of your sleep; we need high-definition video. I strongly recommend we upgrade your biotelemetry to a Whoop strap.'"
+        },
+        {
+          "eventId": "G03",
+          "week": 6,
+          "title": "Hip Flexor Tightness Identified",
+          "description": "Rachel identified hip flexor tightness as the cause of back pain during travel.",
+          "sourceCommunication": "Rachel: 'Based on your movement patterns, the issue isn't your back itself, but your tight hips from frequent flying. We'll build a targeted mobility routine to address this.'"
+        },
+        {
+          "eventId": "G04",
+          "week": 8,
+          "title": "Elevated ApoB Becomes Top Priority",
+          "description": "Blood results came back showing an elevated ApoB of 105 mg/dL.",
+          "sourceCommunication": "Dr. Warren: 'Your fasting glucose is good, but your ApoB is 105 mg/dL. This is elevated and becomes our primary focus for long-term risk reduction.'"
+        }
+      ]
+    },
+    {
+      "episodeId": "E02",
+      "title": "Episode 2: First Interventions & System Test",
+      "dateRange": "Weeks 9-16",
+      "summary": "The team rolled out the first targeted interventions for ApoB and sleep. A sudden illness tested Elyx’s Sick Day Protocol.",
+      "frictionPoints": [
+        "Business travel to Jakarta made adherence to the new nutrition plan difficult.",
+        "A scheduling error by Ruby led to a missed appointment invoice, which Elyx had to cover."
+      ],
+      "outcome": "Illness was managed with proactive protocols. Data showed positive response to diet changes and Zone 2 cardio.",
+      "personaState": {
+        "before": "Engaged, but skeptical and directive.",
+        "after": "Became more of a 'co-manager', impressed by illness management."
+      },
+      "granularEvents": [
+        {
+          "eventId": "G05",
+          "week": 10,
+          "title": "ApoB Nutrition Plan Activated",
+          "description": "Carla designed a nutrition plan focused on reducing saturated fats and increasing soluble fiber.",
+          "sourceCommunication": "Carla: 'To target ApoB, we'll focus on monounsaturated fats and specific fibers. I've sent a guide to your cook, Javier.'"
+        },
+        {
+          "eventId": "G06",
+          "week": 11,
+          "title": "Zone 2 Cardio Protocol Started",
+          "description": "Advik created a personalized Zone 2 cardio protocol to improve cardiovascular efficiency.",
+          "sourceCommunication": "Advik: 'We're starting with 30-minute Zone 2 sessions, three times a week. Keep your HR strictly within 115-125 bpm.'"
+        },
+        {
+          "eventId": "G07",
+          "week": 13,
+          "title": "Viral Infection Detected by Whoop",
+          "description": "Whoop data showed elevated RHR and respiratory rate, flagging illness early.",
+          "sourceCommunication": "Advik: 'Your RHR is elevated by 12bpm and HRV is down 45%. Absolutely no training.'"
+        },
+        {
+          "eventId": "G08",
+          "week": 13,
+          "title": "Sick Day Protocol Activated",
+          "description": "The team rescheduled his board meeting and arranged IV therapy.",
+          "sourceCommunication": "Dr. Warren: 'We are initiating the Elyx Sick Day Protocol immediately. You must postpone your board meeting to ensure a faster recovery.'"
+        }
+      ]
+    },
+    {
+      "episodeId": "E03",
+      "title": "Episode 3: Proactive Optimization & New Tech",
+      "dateRange": "Weeks 17-24",
+      "summary": "The focus shifted to deeper personalization with new tech (CGM, structured strength training).",
+      "frictionPoints": [
+        "Rohan struggled to find time for strength training.",
+        "First CGM sensor failed, requiring replacement."
+      ],
+      "outcome": "CGM data led to improved glycemic control. Strength program successfully integrated.",
+      "personaState": {
+        "before": "A 'co-manager', seeing the value in reactive support.",
+        "after": "Fully bought-in, suggesting experiments and appreciating data-driven insights."
+      },
+      "granularEvents": [
+        {
+          "eventId": "G09",
+          "week": 18,
+          "title": "Continuous Glucose Monitor (CGM) Introduced",
+          "description": "Dr. Warren recommended a CGM for real-time nutrition personalization.",
+          "sourceCommunication": "Dr. Warren: 'The CGM will give us real-time data on how your body responds to foods. This is the next level of personalization.'"
+        },
+        {
+          "eventId": "G10",
+          "week": 19,
+          "title": "Oatmeal vs. Eggs Experiment",
+          "description": "CGM revealed glucose spike from oatmeal; Carla suggested switching to eggs + avocado.",
+          "sourceCommunication": "Carla: 'This is valuable data. Experiment #1: Tomorrow, try eggs + avocado and compare the glucose curves.'"
+        },
+        {
+          "eventId": "G11",
+          "week": 21,
+          "title": "Structured Strength Program Begins",
+          "description": "Rachel introduced a formal strength training program with compound lifts.",
+          "sourceCommunication": "Rachel: 'It's time to graduate to a structured strength program. This is the engine for achieving long-term body composition goals.'"
+        },
+        {
+          "eventId": "G12",
+          "week": 24,
+          "title": "Quarterly Blood Test Shows Progress",
+          "description": "ApoB dropped to 90 mg/dL, with improved inflammatory markers.",
+          "sourceCommunication": "Dr. Warren: 'Excellent news. Your ApoB is down to 90 mg/dL. The interventions are working.'"
+        }
+      ]
+    },
+    {
+      "episodeId": "E04",
+      "title": "Episode 4: Long-Term Goals & Longevity Focus",
+      "dateRange": "Weeks 25-32",
+      "summary": "Shift from managing risks to building a long-term performance & longevity platform.",
+      "frictionPoints": [
+        "Scheduling full-body MRI and DEXA scans around travel was challenging."
+      ],
+      "outcome": "A comprehensive longevity plan was created, integrating advanced diagnostics and cognitive goals.",
+      "personaState": {
+        "before": "Proactive and engaged with current metrics.",
+        "after": "Strategic and future-focused, fully trusting Elyx to manage long-term trajectory."
+      },
+      "granularEvents": [
+        {
+          "eventId": "G13",
+          "week": 26,
+          "title": "Full-Body MRI Screening Proposed",
+          "description": "Neel proposed a proactive cancer screening strategy with MRI.",
+          "sourceCommunication": "Neel: 'For longevity, we recommend a full-body MRI as a baseline, radiation-free screening tool.'"
+        },
+        {
+          "eventId": "G14",
+          "week": 28,
+          "title": "'Centenarian Decathlon' Goals Set",
+          "description": "Rachel set long-term goals for strength, VO2 max, and balance.",
+          "sourceCommunication": "Rachel: 'I propose these goals for the next 24 months: Deadlift 1.5x BW, VO2 Max top 10%, hold a single-leg stand 30s.'"
+        },
+        {
+          "eventId": "G15",
+          "week": 30,
+          "title": "Cognitive Health Goal: Learning Piano",
+          "description": "Rohan chose piano as a cognitive longevity intervention.",
+          "sourceCommunication": "Dr. Warren: 'Learning piano engages multiple domains of the brain. Excellent for cognitive reserve.'"
+        },
+        {
+          "eventId": "G16",
+          "week": 32,
+          "title": "8-Month Review & Future Planning",
+          "description": "Team reviewed progress and mapped next year’s plan.",
+          "sourceCommunication": "Neel: 'We've moved from stabilizing risks to building a high-performance platform. Q4 will focus on longevity goals.'"
+        }
+      ]
+    }
+  ]
+}
