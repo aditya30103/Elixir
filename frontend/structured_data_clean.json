@@ -1,0 +1,12 @@
+{
+  "member": {
+    "id": "rohan_001",
+    "name": "Rohan Patel",
+    "metrics": {
+      "blood_pressure": [],
+      "sleep_hours": [],
+      "hrv": [],
+      "nutrition_adherence": []
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "member": {
+    "id": "rohan_001",
+    "name": "Rohan Patel",
+    "metrics": {
+      "blood_pressure": [
+        {
+          "date": null,
+          "systolic": null,
+          "diastolic": null
+        },
+        {
+          "date": null,
+          "systolic": 135,
+          "diastolic": 88
+        },
+        {
+          "date": null,
+          "systolic": 132,
+          "diastolic": 85
+        }
+      ],
+      "sleep_hours": [
+        {
+          "date": null,
+          "hours": 372
+        },
+        {
+          "date": null,
+          "hours": 68
+        },
+        {
+          "date": null,
+          "hours": 6.2
+        },
+        {
+          "date": null,
+          "hours": 65
+        },
+        {
+          "date": null,
+          "hours": 65
+        },
+        {
+          "date": null,
+          "hours": null
+        },
+        {
+          "date": null,
+          "hours": 94
+        },
+        {
+          "date": null,
+          "hours": 92
+        }
+      ],
+      "hrv": [
+        {
+          "date": null,
+          "ms": 41
+        },
+        {
+          "date": null,
+          "ms": 42
+        },
+        {
+          "date": null,
+          "ms": 38
+        },
+        {
+          "date": null,
+          "ms": 42
+        },
+        {
+          "date": null,
+          "ms": 48
+        },
+        {
+          "date": null,
+          "ms": 42
+        },
+        {
+          "date": null,
+          "ms": 58
+        },
+        {
+          "date": null,
+          "ms": 52
+        },
+        {
+          "date": null,
+          "ms": 48
+        },
+        {
+          "date": null,
+          "ms": null
+        },
+        {
+          "date": null,
+          "ms": 68
+        },
+        {
+          "date": null,
+          "ms": 59
+        },
+        {
+          "date": null,
+          "ms": 72
+        },
+        {
+          "date": null,
+          "ms": 38
+        },
+        {
+          "date": null,
+          "ms": 31
+        },
+        {
+          "date": null,
+          "ms": 34
+        },
+        {
+          "date": null,
+          "ms": 32
+        },
+        {
+          "date": null,
+          "ms": -15
+        },
+        {
+          "date": null,
+          "ms": 52
+        },
+        {
+          "date": null,
+          "ms": 61
+        },
+        {
+          "date": null,
+          "ms": 52
+        }
+      ],
+      "nutrition_adherence": [
+        {
+          "date": null,
+          "percent": 72
+        },
+        {
+          "date": null,
+          "percent": 80
+        },
+        {
+          "date": null,
+          "percent": null
+        },
+        {
+          "date": null,
+          "percent": 65
+        },
+        {
+          "date": null,
+          "percent": null
+        },
+        {
+          "date": null,
+          "percent": null
+        },
+        {
+          "date": null,
+          "percent": 90
+        }
+      ]
+    }
+  }
+}
