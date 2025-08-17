@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "src/elyxproject/api.py": {
+      "includeFiles": "store/**"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/elyxproject/api.py"
+    }
+  ]
+}
