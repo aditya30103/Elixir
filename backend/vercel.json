@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "src/elyxproject/api.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/elyxproject/api.py"
+    }
+  ]
+}
