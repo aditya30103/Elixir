@@ -39,26 +39,6 @@ class RAGPipeline:
             return "I could not find any relevant information in the memory to answer your question."
 
         print("-> Memories retrieved successfully.")
-
-        # 2. Create the analysis task for the agent
-        # analysis_task = Task(
-        #     description=f"""
-        #         You are an expert health data analyst. Your task is to answer a specific question based on a set of provided "memories." These memories consist of chat transcripts and structured data logs from an 8-month health journey.
-
-        #         **--- CRITICAL INSTRUCTIONS ---**
-        #         1.  **Answer ONLY from the Context:** You must base your entire answer on the information provided in the "Relevant Memories" section. Do not invent or infer any information.
-        #         2.  **Synthesize, Don't Just List:** Do not just list the memories. Weave the information from both chat and data logs into a coherent, easy-to-understand answer.
-        #         3.  **Be Specific and Cite Data:** When possible, cite specific data points or conversations to back up your answer.
-
-        #         **--- The User's Question ---**
-        #         {question}
-
-        #         **--- Relevant Memories (Your Source of Truth) ---**
-        #         {relevant_memories}
-        #     """,
-        #     agent=self.analyst_agent,
-        #     expected_output="A clear, concise, and evidence-based answer to the user's question, synthesized from the provided memories."
-        # )
         
         analysis_task = Task(
             description=f"""
