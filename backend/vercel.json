@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "src/elyxproject/api.py": {
+      "runtime": "@vercel/python",
+      "includeFiles": "store/**"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/elyxproject/api.py"
+    }
+  ]
+}
