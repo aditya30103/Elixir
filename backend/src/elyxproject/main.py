@@ -1,9 +1,10 @@
 from dotenv import load_dotenv
+
+load_dotenv()
+
 from src.elyxproject.run_phase1 import run_phase1
 from src.elyxproject.run_phase2 import run_phase2
 from src.elyxproject.run_phase3 import run_phase3
-
-load_dotenv()
 
 def main():
     """Main function to run the Elyx project."""
