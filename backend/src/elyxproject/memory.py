@@ -1,5 +1,9 @@
+import os
 import chromadb
 from sentence_transformers import SentenceTransformer
+
+script_dir = os.path.dirname(__file__)
+db_path = os.path.abspath(os.path.join(script_dir, "..", "..", "store", "vector_memory"))
 
 class SemanticMemory:
     """
@@ -9,7 +13,7 @@ class SemanticMemory:
         print("Initializing Persistent Semantic Memory...")
         try:
             # Tell ChromaDB to save its data to a directory
-            self.client = chromadb.PersistentClient(path=persist_directory)
+            self.client = chromadb.PersistentClient(path=db_path)
             self.collection = self.client.get_or_create_collection("elyx_memory")
             self.encoder = SentenceTransformer('all-MiniLM-L6-v2')
             self.memory_counter = self.collection.count() # Load existing memory count
