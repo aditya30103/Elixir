@@ -13,11 +13,12 @@ config_path = current_dir / 'config' / 'agents.yaml'
 with open(config_path, 'r') as f:
     agents_config = yaml.safe_load(f)
 
-_model = os.getenv("OPENROUTER_MODEL", "openrouter/qwen/qwen3-235b-a22b:free")
 _api_key = os.getenv("OPENROUTER_API_KEY")
+_model_flash = os.getenv("OPENROUTER_MODEL_FLASH", "openrouter/qwen/qwen3-235b-a22b:free")
+_model_pro = os.getenv("OPENROUTER_MODEL_PRO", "openrouter/qwen/qwen3-235b-a22b:free")
 
-llm_flash = ChatLiteLLM(model=_model, api_key=_api_key)
-llm_pro = ChatLiteLLM(model=_model, api_key=_api_key)
+llm_flash = ChatLiteLLM(model=_model_flash, api_key=_api_key)
+llm_pro = ChatLiteLLM(model=_model_pro, api_key=_api_key)
 
 class NarrativeAgents():
     def __init__(self):
