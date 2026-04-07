@@ -3,17 +3,21 @@ from pathlib import Path
 from langchain_community.chat_models.litellm import ChatLiteLLM
 import yaml
 import os
+from dotenv import load_dotenv
 
-# Get the directory of the current file
+load_dotenv()
+
 current_dir = Path(__file__).parent
-# Build the path to the config file
 config_path = current_dir / 'config' / 'agents.yaml'
 
 with open(config_path, 'r') as f:
     agents_config = yaml.safe_load(f)
 
-llm_flash = ChatLiteLLM(model="gemini/gemini-2.5-flash")
-llm_pro = ChatLiteLLM(model="gemini/gemini-2.5-pro")
+_model = os.getenv("OPENROUTER_MODEL", "openrouter/qwen/qwen3-235b-a22b:free")
+_api_key = os.getenv("OPENROUTER_API_KEY")
+
+llm_flash = ChatLiteLLM(model=_model, api_key=_api_key)
+llm_pro = ChatLiteLLM(model=_model, api_key=_api_key)
 
 class NarrativeAgents():
     def __init__(self):

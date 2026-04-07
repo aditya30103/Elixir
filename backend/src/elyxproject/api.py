@@ -1,21 +1,20 @@
+import os
 from fastapi import FastAPI
 from pydantic import BaseModel
-from .rag_pipeline import RAGPipeline  # Correctly import the RAGPipeline class
+from .rag_pipeline import RAGPipeline
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
 
-# Initialize the FastAPI app
+load_dotenv()
+
 app = FastAPI()
 
-# --- This is the key change ---
-# Create a single, reusable instance of the RAGPipeline when the server starts.
-# This is much more efficient than creating a new one for every request.
 rag_system = RAGPipeline()
-# -----------------------------
 
-# Configure CORS
-origins = [
-    "http://localhost:3000",
-]
+# FRONTEND_URL can be set to the deployed Vercel URL in production.
+# Falls back to localhost for local development.
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:3000")
+origins = [frontend_url, "http://localhost:3000"]
 
 app.add_middleware(
     CORSMiddleware,

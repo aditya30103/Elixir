@@ -10,8 +10,8 @@ import { unstable_noStore as noStore } from 'next/cache';
 async function loadDashboardData() {
   noStore(); // Explicitly prevent caching of this function's output
 
-  const elyxDataPath = path.join(process.cwd(), 'frontend/data/elyx_data_cleaned.json');
-  const memberDataPath = path.join(process.cwd(), 'frontend/data/cleaned_member.json');
+  const elyxDataPath = path.join(process.cwd(), 'data/elyx_data_cleaned.json');
+  const memberDataPath = path.join(process.cwd(), 'data/cleaned_member.json');
 
   try {
     const elyxFile = await fs.readFile(elyxDataPath, 'utf8');
