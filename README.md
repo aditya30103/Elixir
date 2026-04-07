@@ -2,7 +2,7 @@
 
 Elyx AI is a multi-agent simulation and visualization platform for long-term personalized health journeys. It generates a realistic 8-month health narrative for a member, stores it in a vector database, and exposes it through an interactive frontend with an AI-powered "Ask Why" feature.
 
-**Live Demo:** [elixir-sepia.vercel.app](https://elixir-sepia.vercel.app/)
+**Live Demo:** [elixir-frontend-sand.vercel.app](https://elixir-frontend-sand.vercel.app/)
 
 ---
 
