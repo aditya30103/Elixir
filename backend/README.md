@@ -21,6 +21,6 @@ FastAPI backend powering the "Ask Why" RAG feature for the Elyx AI health journe
 | Variable | Description |
 |---|---|
 | `OPENROUTER_API_KEY` | Your OpenRouter API key |
-| `OPENROUTER_MODEL_PRO` | Model for heavy reasoning (default: qwen free) |
-| `OPENROUTER_MODEL_FLASH` | Model for lighter tasks (default: qwen free) |
+| `OPENROUTER_MODEL_PRO` | Model for agents & RAG analysis (default: `openrouter/openai/gpt-oss-120b:free`) |
+| `OPENROUTER_MODEL_FLASH` | Model for routing & summaries (default: `openrouter/openai/gpt-oss-20b:free`) |
 | `FRONTEND_URL` | Vercel frontend URL for CORS |
