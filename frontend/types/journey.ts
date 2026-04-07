@@ -125,3 +125,26 @@ export interface EpisodeData {
   bpReadings?: BPReading[];
 }
 
+
+export interface Episode {
+  id: number;
+  episodeId?: string;
+  title: string;
+  weeks?: string;
+  dateRange?: string;
+  narrative?: string;
+  summary?: string;
+  primaryGoalFull?: string;
+  frictionFull?: string;
+  finalOutcomeFull?: string;
+  metrics?: Record<string, string | undefined>;
+  personaState?: { before?: string; after?: string };
+  persona?: { beforeFull?: string; afterFull?: string };
+  granularEvents?: unknown[];
+}
+
+export type EpisodeStruct = Episode;
+
+export type Event = Record<string, unknown>;
+
+export type JourneyData = { episodes: Episode[] };

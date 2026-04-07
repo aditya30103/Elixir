@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.env.*
+!.env.example
+pyproject.toml
+uv.lock
+*.md
+!README.md
+.git
+.gitignore

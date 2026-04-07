@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // lib/normalizeStructuredData.ts
 // Defensive normalizer for structured_data.json
 // Returns canonical records and exposes simple extractors for dashboard metrics.

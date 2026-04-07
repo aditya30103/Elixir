@@ -1,5 +1,6 @@
 import os
 from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from .rag_pipeline import RAGPipeline
 from fastapi.middleware.cors import CORSMiddleware
@@ -14,7 +15,7 @@ rag_system = RAGPipeline()
 # FRONTEND_URL can be set to the deployed Vercel URL in production.
 # Falls back to localhost for local development.
 frontend_url = os.getenv("FRONTEND_URL", "http://localhost:3000")
-origins = [frontend_url, "http://localhost:3000"]
+origins = list({frontend_url, "http://localhost:3000"})
 
 app.add_middleware(
     CORSMiddleware,
@@ -29,8 +30,11 @@ class Query(BaseModel):
 
 @app.post("/ask")
 async def ask_rag(query: Query):
-    answer = rag_system.answer(query.question)
-    return {"answer": answer}
+    try:
+        answer = rag_system.answer(query.question)
+        return {"answer": answer}
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
 
 @app.get("/")
 def read_root():

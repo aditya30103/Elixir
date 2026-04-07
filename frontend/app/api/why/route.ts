@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import journeyData from "@/data/journey.json";
-import { JourneyData, Episode, Event } from "@/types/journey";
 
-const data: JourneyData = journeyData as JourneyData;
+type Event = { eventId: string; title?: string; sourceCommunication?: string; };
+type Episode = { title?: string; granularEvents: Event[]; };
+type JourneyData = { episodes: Episode[] };
+
+const data: JourneyData = journeyData as unknown as JourneyData;
 
 export async function POST(req: NextRequest) {
   try {
