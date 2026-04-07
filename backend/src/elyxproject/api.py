@@ -29,14 +29,7 @@ class Query(BaseModel):
 
 @app.post("/ask")
 async def ask_rag(query: Query):
-    """
-    This endpoint receives a question, passes it to the RAG pipeline's
-    answer method, and returns the generated answer.
-    """
-    print(f"Received question: {query.question}")
-    # Use the rag_system instance to answer the question
     answer = rag_system.answer(query.question)
-    print(f"Generated answer: {answer}")
     return {"answer": answer}
 
 @app.get("/")

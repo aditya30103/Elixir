@@ -14,8 +14,8 @@ with open(config_path, 'r') as f:
     agents_config = yaml.safe_load(f)
 
 _api_key = os.getenv("OPENROUTER_API_KEY")
-_model_flash = os.getenv("OPENROUTER_MODEL_FLASH", "openrouter/qwen/qwen3-235b-a22b:free")
-_model_pro = os.getenv("OPENROUTER_MODEL_PRO", "openrouter/qwen/qwen3-235b-a22b:free")
+_model_flash = os.getenv("OPENROUTER_MODEL_FLASH", "openrouter/openai/gpt-oss-20b:free")
+_model_pro = os.getenv("OPENROUTER_MODEL_PRO", "openrouter/openai/gpt-oss-120b:free")
 
 llm_flash = ChatLiteLLM(model=_model_flash, api_key=_api_key)
 llm_pro = ChatLiteLLM(model=_model_pro, api_key=_api_key)
